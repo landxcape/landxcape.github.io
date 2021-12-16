@@ -3,7 +3,7 @@ function resumeJson() {
         name: 'Purna Kalyan Shakya',
         location: {
             permanent: 'Narayangadh, Chitwan, Nepal',
-            temporaty: 'Kathmandu, Bagmati, Nepal',
+            temporary: 'Kathmandu, Bagmati, Nepal',
         },
         contact: {
             gmail: 'landxcape09@gmail.com',
