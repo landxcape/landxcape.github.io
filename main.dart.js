@@ -47675,7 +47675,7 @@ return A.a3d(this.r,s.b.a5(0,r.gt(r)),B.dR)}}
 A.vw.prototype={
 N(a,b){return this.e.$2(b,this.f)}}
 A.yr.prototype={
-N(a,b){return new A.pH(B.Bx,"Flutter Demo",A.a0P(B.ad),A.a0P(B.ac),B.rf,null)}}
+N(a,b){return new A.pH(B.Bx,"landxcape.github.io",A.a0P(B.ad),A.a0P(B.ac),B.rf,null)}}
 A.lx.prototype={}
 A.NA.prototype={}
 A.ll.prototype={}
