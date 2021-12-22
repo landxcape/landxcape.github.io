@@ -33938,8 +33938,7 @@ A.DB.prototype={}
 A.xR.prototype={
 P(a,b){var s,r,q,p=null,o=A.a4Q(b),n=o.b
 if(n==null)n=16
-s=o.c
-if(s==null)s=0
+s=2
 r=o.d
 if(r==null)r=0
 q=o.e
