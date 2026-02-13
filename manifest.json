@@ -1,11 +1,11 @@
 {
-    "name": "landxcape_github_io",
-    "short_name": "landxcape_github_io",
+    "name": "Purna Kalyan Shakya - Portfolio",
+    "short_name": "PKS Portfolio",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "Purna Kalyan Shakya | Electronics and Communication Engineer | Flutter/Django Developer.",
+    "background_color": "#071322",
+    "theme_color": "#071322",
+    "description": "High-performance Real-time & IoT Portfolio",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
