@@ -22,6 +22,32 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
   <title>Shakyapurna | Simulation Portfolio</title>
   <link rel="manifest" href="manifest.json">
+  <!-- Memory management configuration -->
+  <script>
+    // Configure CanvasKit memory limits to prevent crashes
+    if ('CanvasKitInit' in window) {
+      window.CanvasKitInit = window.CanvasKitInit || {};
+      // Increase memory limit for complex simulations
+      window.CanvasKitInit.multiple = 1.5;
+    }
+    
+    // Set up memory monitoring
+    window.addEventListener('load', function() {
+      // Log memory usage periodically if available
+      if ('memory' in performance) {
+        setInterval(() => {
+          const mem = performance.memory;
+          if (mem.usedJSHeapSize > 0.8 * mem.jsHeapSizeLimit) {
+            console.warn('High memory usage detected:', {
+              used: (mem.usedJSHeapSize / 1024 / 1024).toFixed(2) + ' MB',
+              limit: (mem.jsHeapSizeLimit / 1024 / 1024).toFixed(2) + ' MB',
+              percentage: (mem.usedJSHeapSize / mem.jsHeapSizeLimit * 100).toFixed(2) + '%'
+            });
+          }
+        }, 30000); // Check every 30 seconds
+      }
+    });
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
