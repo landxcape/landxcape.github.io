@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0B0D0E",
     "theme_color": "#0B0D0E",
-    "description": "Production systems engineering portfolio, 10 open-source Flutter/Dart packages, Homebrew CLI tools, and architecture monograph by Purna Kalyan Shakya (@landxcape).",
+    "description": "Personal portfolio, open-source package workbench, and developer tools by Purna Kalyan Shakya.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
