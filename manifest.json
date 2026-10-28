@@ -1,11 +1,11 @@
 {
-    "name": "Purna Kalyan Shakya - Portfolio",
-    "short_name": "PKS Portfolio",
+    "name": "Purna Kalyan Shakya // Senior Flutter Engineer",
+    "short_name": "Purna Shakya",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#071322",
-    "theme_color": "#071322",
-    "description": "High-performance Real-time & IoT Portfolio",
+    "background_color": "#0B0D0E",
+    "theme_color": "#0B0D0E",
+    "description": "Production systems engineering portfolio, 10 open-source Flutter/Dart packages, Homebrew CLI tools, and architecture monograph by Purna Kalyan Shakya (@landxcape).",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
