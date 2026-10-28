@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shakyapurna.com.np/sitemap.xml
