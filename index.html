@@ -114,26 +114,94 @@
 
     #seo-root {
       position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    #app-loader {
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      overflow: auto;
       background-color: #0B0D0E;
-      color: #E2E8F0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      padding: 40px 24px;
-      box-sizing: border-box;
-      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      z-index: 9999;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+      pointer-events: none;
     }
 
-    #seo-root a {
-      color: #38BDF8;
-      text-decoration: underline;
+    #app-loader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .loader-icon {
+      width: 32px;
+      height: 32px;
+      image-rendering: -webkit-optimize-contrast;
+      opacity: 0.9;
+    }
+
+    .loader-status {
+      font-family: "Cascadia Code", Menlo, Monaco, Consolas, monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      color: #64748B;
+      text-transform: uppercase;
+    }
+
+    .loader-bar {
+      width: 110px;
+      height: 1.5px;
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 1px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .loader-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 40%;
+      background: linear-gradient(90deg, transparent, #38BDF8, transparent);
+      animation: shimmer 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(300%);
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Minimalist Brand Shimmer Loader -->
+  <div id="app-loader">
+    <img src="favicon.png" width="32" height="32" alt="Brand Mark" class="loader-icon" />
+    <div class="loader-status">INITIALIZING WASM RUNTIME</div>
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+  </div>
+
   <!-- Semantic Prerendered DOM for Search Engine Crawlers & Assistive Fallback -->
   <div id="seo-root">
     <header>
@@ -200,8 +268,15 @@
 
   <script>
     window.addEventListener('flutter-first-frame', function () {
-      var el = document.getElementById('seo-root');
-      if (el) el.remove();
+      var loader = document.getElementById('app-loader');
+      if (loader) {
+        loader.classList.add('fade-out');
+        setTimeout(function () {
+          loader.remove();
+        }, 300);
+      }
+      var seo = document.getElementById('seo-root');
+      if (seo) seo.remove();
     });
   </script>
   <script src="flutter_bootstrap.js" async></script>
