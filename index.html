@@ -17,6 +17,7 @@
   <base href="/">
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Personal portfolio, open-source package workbench, and developer tools by Purna Kalyan Shakya.">
   <meta name="theme-color" content="#0B0D0E" media="(prefers-color-scheme: dark)">
@@ -130,17 +131,17 @@
       left: 0;
       width: 100%;
       height: 100%;
+      min-height: 100dvh;
       background-color: #0B0D0E;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 16px;
       z-index: 9999;
       opacity: 1;
       visibility: visible;
-      transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+      transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s;
       pointer-events: none;
+      overflow: hidden;
     }
 
     #app-loader.fade-out {
@@ -148,25 +149,61 @@
       visibility: hidden;
     }
 
+    #loader-grid-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    #loader-noise-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.045;
+      mix-blend-mode: overlay;
+    }
+
+    .loader-card {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(12px, 2.5vh, 18px);
+      padding: clamp(16px, 3vw, 24px);
+    }
+
     .loader-icon {
-      width: 32px;
-      height: 32px;
+      width: clamp(32px, 4.5vw, 40px);
+      height: clamp(32px, 4.5vw, 40px);
       image-rendering: -webkit-optimize-contrast;
-      opacity: 0.9;
+      opacity: 0.95;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
     }
 
     .loader-status {
       font-family: "Cascadia Code", Menlo, Monaco, Consolas, monospace;
-      font-size: 10px;
+      font-size: clamp(9.5px, 1.2vw, 11px);
       letter-spacing: 0.16em;
-      color: #64748B;
+      color: #94A3B8;
       text-transform: uppercase;
+      text-align: center;
+      user-select: none;
     }
 
     .loader-bar {
-      width: 110px;
-      height: 1.5px;
-      background-color: rgba(255, 255, 255, 0.06);
+      width: clamp(120px, 22vw, 160px);
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.08);
       border-radius: 1px;
       overflow: hidden;
       position: relative;
@@ -177,7 +214,7 @@
       top: 0;
       left: 0;
       height: 100%;
-      width: 40%;
+      width: 45%;
       background: linear-gradient(90deg, transparent, #38BDF8, transparent);
       animation: shimmer 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
@@ -193,14 +230,201 @@
   </style>
 </head>
 <body>
-  <!-- Minimalist Brand Shimmer Loader -->
+  <!-- Generative Architectural Grid Shimmer Loader -->
   <div id="app-loader">
-    <img src="favicon.png" width="32" height="32" alt="Brand Mark" class="loader-icon" />
-    <div class="loader-status">INITIALIZING WASM RUNTIME</div>
-    <div class="loader-bar">
-      <div class="loader-progress"></div>
+    <canvas id="loader-grid-canvas"></canvas>
+    <div id="loader-noise-overlay"></div>
+    <div class="loader-card">
+      <img src="favicon.png" width="36" height="36" alt="Brand Mark" class="loader-icon" />
+      <div class="loader-status">INITIALIZING WASM RUNTIME</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var canvas = document.getElementById('loader-grid-canvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      var animId = null;
+      var startTime = null;
+      var step = 48;
+      var width = 0, height = 0, dpr = 1;
+
+      // Zero-latency procedural tactile grain overlay matching home page
+      var noiseOverlay = document.getElementById('loader-noise-overlay');
+      if (noiseOverlay) {
+        var nCanvas = document.createElement('canvas');
+        nCanvas.width = 128;
+        nCanvas.height = 128;
+        var nCtx = nCanvas.getContext('2d');
+        var imgData = nCtx.createImageData(128, 128);
+        var d = imgData.data;
+        for (var n = 0; n < d.length; n += 4) {
+          var v = (Math.random() * 255) | 0;
+          d[n] = v;
+          d[n + 1] = v;
+          d[n + 2] = v;
+          d[n + 3] = 255;
+        }
+        nCtx.putImageData(imgData, 0, 0);
+        noiseOverlay.style.backgroundImage = 'url(' + nCanvas.toDataURL() + ')';
+        noiseOverlay.style.backgroundRepeat = 'repeat';
+      }
+
+      function resize() {
+        dpr = window.devicePixelRatio || 1;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.round(width * dpr);
+        canvas.height = Math.round(height * dpr);
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+
+      function draw(now) {
+        if (!startTime) startTime = now;
+        var elapsed = (now - startTime) / 1000;
+        var p = Math.min(1.0, elapsed / 1.2);
+        var ease = 1.0 - Math.pow(1.0 - p, 3);
+        var maxR = Math.hypot(width, height) * 0.7;
+        var r = maxR * ease;
+
+        ctx.clearRect(0, 0, width, height);
+
+        var cx = width / 2;
+        var cy = height / 2;
+
+        // Subtle ambient center glow
+        var glowR = Math.min(450, r * 0.95);
+        if (glowR > 0) {
+          var glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, glowR);
+          glow.addColorStop(0, 'rgba(56, 189, 248, 0.05)');
+          glow.addColorStop(0.6, 'rgba(56, 189, 248, 0.01)');
+          glow.addColorStop(1, 'rgba(56, 189, 248, 0)');
+          ctx.fillStyle = glow;
+          ctx.beginPath();
+          ctx.arc(cx, cy, glowR, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        var maxCols = Math.ceil((width / 2) / step) + 1;
+        var maxRows = Math.ceil((height / 2) / step) + 1;
+
+        // 1. Minor vertical lines (48px step)
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.022)';
+        ctx.beginPath();
+        for (var i = -maxCols; i <= maxCols; i++) {
+          if (i % 4 === 0) continue;
+          var x = cx + i * step;
+          var dx = Math.abs(x - cx);
+          if (dx < r) {
+            var dy = Math.sqrt(r * r - dx * dx);
+            ctx.moveTo(x, cy - dy);
+            ctx.lineTo(x, cy + dy);
+          }
+        }
+        ctx.stroke();
+
+        // 2. Major structural vertical lines (192px / 4 cells)
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.07)';
+        ctx.beginPath();
+        for (var i = -maxCols; i <= maxCols; i++) {
+          if (i % 4 !== 0) continue;
+          var x = cx + i * step;
+          var dx = Math.abs(x - cx);
+          if (dx < r) {
+            var dy = Math.sqrt(r * r - dx * dx);
+            ctx.moveTo(x, cy - dy);
+            ctx.lineTo(x, cy + dy);
+          }
+        }
+        ctx.stroke();
+
+        // 3. Minor horizontal lines (48px step)
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.022)';
+        ctx.beginPath();
+        for (var j = -maxRows; j <= maxRows; j++) {
+          if (j % 4 === 0) continue;
+          var y = cy + j * step;
+          var dy = Math.abs(y - cy);
+          if (dy < r) {
+            var dx = Math.sqrt(r * r - dy * dy);
+            ctx.moveTo(cx - dx, y);
+            ctx.lineTo(cx + dx, y);
+          }
+        }
+        ctx.stroke();
+
+        // 4. Major structural horizontal lines (192px / 4 cells)
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.07)';
+        ctx.beginPath();
+        for (var j = -maxRows; j <= maxRows; j++) {
+          if (j % 4 !== 0) continue;
+          var y = cy + j * step;
+          var dy = Math.abs(y - cy);
+          if (dy < r) {
+            var dx = Math.sqrt(r * r - dy * dy);
+            ctx.moveTo(cx - dx, y);
+            ctx.lineTo(cx + dx, y);
+          }
+        }
+        ctx.stroke();
+
+        // 5. Major coordinate crosses (+) exclusively at 192px intersections
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.20)';
+        ctx.beginPath();
+        for (var i = -maxCols; i <= maxCols; i++) {
+          if (i % 4 !== 0) continue;
+          var x = cx + i * step;
+          var dx = x - cx;
+          for (var j = -maxRows; j <= maxRows; j++) {
+            if (j % 4 !== 0) continue;
+            var y = cy + j * step;
+            var dy = y - cy;
+            var dist = Math.hypot(dx, dy);
+            if (dist <= r) {
+              ctx.moveTo(x - 4, y);
+              ctx.lineTo(x + 4, y);
+              ctx.moveTo(x, y - 4);
+              ctx.lineTo(x, y + 4);
+            }
+          }
+        }
+        ctx.stroke();
+
+        // 6. Feathered edge fade: smoothly fades boundary into the void
+        if (r > 0) {
+          ctx.globalCompositeOperation = 'destination-in';
+          var feather = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+          feather.addColorStop(0, 'rgba(0, 0, 0, 1)');
+          feather.addColorStop(0.65, 'rgba(0, 0, 0, 0.95)');
+          feather.addColorStop(0.85, 'rgba(0, 0, 0, 0.5)');
+          feather.addColorStop(1, 'rgba(0, 0, 0, 0)');
+          ctx.fillStyle = feather;
+          ctx.fillRect(0, 0, width, height);
+          ctx.globalCompositeOperation = 'source-over';
+        }
+
+        animId = requestAnimationFrame(draw);
+      }
+
+      animId = requestAnimationFrame(draw);
+
+      window.addEventListener('flutter-first-frame', function () {
+        if (animId) cancelAnimationFrame(animId);
+        window.removeEventListener('resize', resize);
+      });
+    })();
+  </script>
 
   <!-- Semantic Prerendered DOM for Search Engine Crawlers & Assistive Fallback -->
   <div id="seo-root">
