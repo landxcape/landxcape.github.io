@@ -113,16 +113,99 @@
       overflow: hidden;
     }
 
-    #seo-root {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
+    #semantic-fallback {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+      padding: 48px 24px 96px;
+      max-width: 980px;
+      margin: 0 auto;
+      color: #CBD5E1;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.65;
+      z-index: 1;
+    }
+
+    #semantic-fallback h1,
+    #semantic-fallback h2,
+    #semantic-fallback h3,
+    #semantic-fallback h4 {
+      color: #F8FAFC;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    #semantic-fallback h1 {
+      font-size: 2.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    #semantic-fallback h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    #semantic-fallback h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: #38BDF8;
+    }
+
+    #semantic-fallback code,
+    #semantic-fallback pre {
+      font-family: 'Cascadia Code', 'Fira Code', monospace;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    #semantic-fallback a {
+      color: #38BDF8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    #semantic-fallback .kicker {
+      font-family: 'Cascadia Code', monospace;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #38BDF8;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    #semantic-fallback .metric-pill {
+      display: inline-block;
+      font-family: 'Cascadia Code', monospace;
+      font-size: 0.78rem;
+      background: rgba(56, 189, 248, 0.1);
+      color: #38BDF8;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    #semantic-fallback .notice-box {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 28px 0;
+    }
+
+    noscript #app-loader {
+      display: none !important;
+    }
+
+    noscript html, noscript body {
+      overflow: auto !important;
     }
 
     #app-loader {
@@ -426,66 +509,159 @@
     })();
   </script>
 
-  <!-- Semantic Prerendered DOM for Search Engine Crawlers & Assistive Fallback -->
-  <div id="seo-root">
+  <!-- Semantic Prerendered DOM & Autonomous Agent Specification -->
+  <div id="semantic-fallback">
     <header>
-      <p>KATHMANDU, NEPAL // PRODUCTION FLUTTER &amp; DART</p>
+      <div class="kicker">• KATHMANDU, NEPAL // PRODUCTION FLUTTER &amp; DART</div>
       <h1>Purna Kalyan Shakya</h1>
-      <p><strong>Senior Flutter Engineer</strong></p>
-      <p>Software engineer with an electronics background, working primarily in Flutter and Dart. Work centers on runtime predictability, offline-first architectures, and practical developer tooling built for adverse hardware environments, bridging into native Android platform channels and C/Rust via FFI when platform boundaries require it.</p>
+      <p><strong>Senior Flutter &amp; Systems Engineer</strong></p>
+      <p>Software engineer with an electronics engineering background, working primarily in Flutter, Dart, and native systems integration. Engineering focus centers on runtime predictability, offline-first architectures, and resilient developer tooling built for adverse hardware environments, bridging into native Android platform channels, C/Rust via Dart FFI, and WebAssembly (WASM).</p>
+      <p>
+        <span class="metric-pill">4 Commercial Systems</span>
+        <span class="metric-pill">10 Open Source Packages</span>
+        <span class="metric-pill">4 Command-Line Tools</span>
+        <span class="metric-pill">5+ Years Production Experience</span>
+      </p>
     </header>
+
+    <div class="notice-box">
+      <h4>Runtime Architecture &amp; Interactive Workbench Notice</h4>
+      <p>This web platform is an autonomous client-side engineering application compiled from Dart to <strong>WebAssembly (WASM)</strong> and executed directly on the client's GPU via hardware-accelerated <strong>CanvasKit / WebGL</strong>. It features procedural GLSL fragment shaders (continuous Rayleigh-scattering atmospheric sky gradients, dynamic solar celestial orbits, and real-time noise grain) alongside multithreaded Dart isolate compute engines.</p>
+      <p>While this semantic document provides the complete, authoritative catalog of systems architecture, published libraries, and engineering case studies, the interactive Package Lab (including live 60 FPS gravitational physics simulations, raycast wavefield observatories, and offline fault-injection sandboxes) runs client-side and requires a modern browser with WebAssembly and WebGL acceleration enabled.</p>
+    </div>
 
     <main>
       <section>
-        <h2>01 // Commercial Systems</h2>
+        <h2>01 // Commercial Systems &amp; Engineering Case Studies</h2>
+
         <article>
           <h3>Real-Time Fleet Telemetry &amp; Map Marker Interpolator // Slash Plus</h3>
-          <p>Live tracking engine monitoring 1,500+ commercial vehicles across nationwide transit routes with worker isolate pools and sub-3s coordinate batching.</p>
+          <p>
+            <span class="metric-pill">1,500+ Active Vehicles</span>
+            <span class="metric-pill">Sub-3s Coordinate Batching</span>
+            <span class="metric-pill">Worker Isolate Pool</span>
+            <span class="metric-pill">Ticker Bearing Interpolation</span>
+          </p>
+          <p>Live tracking engine monitoring 1,500+ commercial vehicles across nationwide transit routes in Nepal.</p>
+          <p><strong>Problem &amp; Constraints:</strong> High-frequency Socket.IO telemetry packets arrived so rapidly that deserializing JSON payloads on Flutter's main UI thread saturated the isolate event loop, triggering frame drops and halting map animations.</p>
+          <p><strong>Solution &amp; Architecture:</strong> Offloaded payload deserialization and validation to a dedicated, persistent worker isolate pool. Coordinates are batched into 3-second temporal windows and smoothly interpolated using custom ticker-driven spherical bearing and position interpolation curves.</p>
+          <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/animated_marker">animated_marker</a>, <a href="https://pub.dev/packages/isolate_runner_mixin">isolate_runner_mixin</a></p>
         </article>
+
         <article>
           <h3>Offline-First Transit Media &amp; Signage Player // Slash Plus</h3>
-          <p>Autonomous infotainment systems on public transit buses. Offline-first SQLite priority queue and native cryptographic RSA acceleration (15s to 150ms latency cut).</p>
+          <p>
+            <span class="metric-pill">100+ Transit Displays</span>
+            <span class="metric-pill">Sub-200ms Transitions</span>
+            <span class="metric-pill">SQLite Priority Queue</span>
+            <span class="metric-pill">150ms RSA Verification</span>
+          </p>
+          <p>Autonomous digital signage and infotainment systems operating on commercial passenger transit buses.</p>
+          <p><strong>Problem &amp; Constraints:</strong> Harsh onboard vehicular operating environments characterized by abrupt engine power cuts, frequent cellular dead zones along mountain highways, and severe thermal throttling on low-cost Android hardware.</p>
+          <p><strong>Solution &amp; Architecture:</strong> Implemented a resilient offline-first SQLite state machine with durable priority task queues, cryptographic lease verification, and atomic file swaps. Integrated native C/Android cryptographic acceleration, slashing cryptographic verification latency from 15 seconds to 150 milliseconds.</p>
+          <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/resumable_downloader">resumable_downloader</a>, <a href="https://pub.dev/packages/ffr_crypto">ffr_crypto</a></p>
         </article>
+
         <article>
-          <h3>Android POS Fleet &amp; Direct Thermal Printer Engine // Slash Plus</h3>
-          <p>Fleet of 30+ handheld Android POS terminals. Custom Flutter Canvas raw ESC/POS byte streaming and offline cryptographically signed ledger.</p>
+          <h3>Handheld Android POS Fleet &amp; Direct Thermal Printer Engine // Slash Plus</h3>
+          <p>
+            <span class="metric-pill">30+ Field Devices</span>
+            <span class="metric-pill">Sub-10ms Ticket Renders</span>
+            <span class="metric-pill">Raw ESC/POS Streaming</span>
+            <span class="metric-pill">Hardware Fault Recovery</span>
+          </p>
+          <p>Fleet of handheld Android POS devices deployed for physical ticketing across transit terminals.</p>
+          <p><strong>Problem &amp; Constraints:</strong> Vendor Android printer SDKs suffered from unmanaged memory leaks, thread contention, and unpredictable printer freezes during peak ticketing rushes.</p>
+          <p><strong>Solution &amp; Architecture:</strong> Engineered a direct binary ESC/POS byte streaming pipeline over low-level Android hardware interfaces, bypassing vendor runtime layers. Rendered print layouts on an offscreen Flutter Canvas at sub-10ms latency with cryptographically signed local transaction ledgers.</p>
         </article>
+
         <article>
           <h3>Real-Time Delivery Logistics &amp; Dispatch Engine // Dynamic Technosoft</h3>
-          <p>Enterprise logistics and courier tracking module in Clean Architecture with event-driven BLoC and live Google Maps pipelines.</p>
+          <p>
+            <span class="metric-pill">Enterprise Scale</span>
+            <span class="metric-pill">Clean Architecture</span>
+            <span class="metric-pill">Event-Driven BLoC</span>
+            <span class="metric-pill">Live Google Maps</span>
+          </p>
+          <p>Courier tracking, dispatch coordination, and route management system built with scalable Feature-First Clean Architecture and unidirectional BLoC state streams.</p>
+          <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/clean_feature_arch">clean_feature_arch</a>, <a href="https://pub.dev/packages/repository_kit">repository_kit</a></p>
         </article>
       </section>
 
       <section>
-        <h2>02 // Open Source Packages</h2>
+        <h2>02 // Interactive Package Lab &amp; Execution Sandboxes</h2>
+        <p>The site houses an integrated developer workbench with executable code consoles, architectural contracts, and in-browser interactive sandboxes:</p>
+
+        <article>
+          <h3>N-Body Gravitational Physics Simulation Canvas</h3>
+          <p>A multi-body celestial simulator running in pure Dart and Flutter Canvas. Solves gravitational differential equations at 60 FPS using 4th-order Runge-Kutta (RK4), Verlet, and Euler numerical integrators with interactive pointer attractor wells and Barnes-Hut spatial quadtree approximation.</p>
+          <p><em>Available in the interactive workbench under package <code>nbody_sim_flutter</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Zen Grid Dynamic Wavefield Observatory</h3>
+          <p>A procedural generative canvas evaluating continuous trigonometric wavefields, interactive raycasting, and coordinate crosshair telemetry across customizable grid topologies.</p>
+          <p><em>Available in the interactive workbench under experiment <code>Zen Grid Observatory</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Real-Time Vector Map &amp; Marker Telemetry Sandbox</h3>
+          <p>Interactive coordinate stream simulator demonstrating smooth 60 FPS vehicle motion and spherical bearing rotation without UI stutter.</p>
+          <p><em>Available in the interactive workbench under package <code>animated_marker</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Zero-Layout-Pass Marquee Ticker Sandbox</h3>
+          <p>A high-throughput continuous text streamer that operates entirely at the RenderBox level, completely avoiding recurring Flutter layout and garbage collection passes.</p>
+          <p><em>Available in the interactive workbench under package <code>scroll_texts_widget</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Repository Kit Offline Synchronization Sandbox</h3>
+          <p>An interactive network emulator demonstrating functional <code>Result&lt;T&gt;</code> error handling, optimistic cache writes, and automatic background synchronization during simulated network dropouts.</p>
+          <p><em>Available in the interactive workbench under package <code>repository_kit</code>.</em></p>
+        </article>
+      </section>
+
+      <section>
+        <h2>03 // Open Source Packages &amp; Libraries</h2>
         <ul>
-          <li><a href="https://pub.dev/packages/animated_marker">animated_marker</a>: Smooth 60fps GPS coordinate interpolation &amp; bearing rotation for vehicle tracking.</li>
-          <li><a href="https://pub.dev/packages/scroll_texts_widget">scroll_texts_widget</a>: High-performance horizontal marquee text ticker bypassing widget layout passes.</li>
-          <li><a href="https://pub.dev/packages/isolate_runner_mixin">isolate_runner_mixin</a>: Persistent worker concurrency mixin with RootIsolateToken bridging and universal Web/Wasm compilation.</li>
-          <li><a href="https://pub.dev/packages/resumable_downloader">resumable_downloader</a>: Multipart range downloads with durable pause/resume and persistent SQLite scheduling.</li>
-          <li><a href="https://pub.dev/packages/repository_kit">repository_kit</a>: Pure Dart toolkit for offline-first repositories with functional Result types.</li>
-          <li><a href="https://pub.dev/packages/clean_feature_arch">clean_feature_arch</a>: Feature-first Clean Architecture scaffolding toolkit with Dart 3 enforcement rules.</li>
-          <li><a href="https://pub.dev/packages/nbody_sim_core">nbody_sim_core</a>: Engine-agnostic N-body gravitational simulation core models with Runge-Kutta 4th order integrators.</li>
-          <li><a href="https://pub.dev/packages/nbody_sim_flutter">nbody_sim_flutter</a>: Flutter rendering widgets and interactive gesture viewport controls for N-body simulations.</li>
-          <li><a href="https://pub.dev/packages/biometric_secure_vault">biometric_secure_vault</a>: Hardware-backed key-value storage gated behind biometric authentication prompts.</li>
-          <li><a href="https://pub.dev/packages/ffr_crypto">ffr_crypto</a>: High-speed native RSA signature verification, AEAD, and hashing via dart:ffi bindings.</li>
+          <li><strong><a href="https://pub.dev/packages/animated_marker">animated_marker</a>:</strong> Smooth 60 FPS GPS coordinate interpolation and spherical bearing rotation for vehicle tracking on Google Maps.</li>
+          <li><strong><a href="https://pub.dev/packages/scroll_texts_widget">scroll_texts_widget</a>:</strong> High-performance continuous horizontal marquee text ticker bypassing recurring widget layout passes.</li>
+          <li><strong><a href="https://pub.dev/packages/isolate_runner_mixin">isolate_runner_mixin</a>:</strong> Persistent worker concurrency mixin with RootIsolateToken bridging and universal Web/Wasm compilation.</li>
+          <li><strong><a href="https://pub.dev/packages/resumable_downloader">resumable_downloader</a>:</strong> Resilient multipart chunked downloader with SQLite task persistence and background download resumption.</li>
+          <li><strong><a href="https://pub.dev/packages/repository_kit">repository_kit</a>:</strong> Pure Dart offline-first repository patterns with functional <code>Result&lt;T&gt;</code> types and reactive synchronization.</li>
+          <li><strong><a href="https://pub.dev/packages/clean_feature_arch">clean_feature_arch</a>:</strong> Feature-first Clean Architecture scaffolding toolkit with Dart 3 structural lint rules.</li>
+          <li><strong><a href="https://pub.dev/packages/nbody_sim_core">nbody_sim_core</a>:</strong> Engine-agnostic N-body gravitational simulation core with Runge-Kutta 4th order numerical integrators.</li>
+          <li><strong><a href="https://pub.dev/packages/nbody_sim_flutter">nbody_sim_flutter</a>:</strong> Hardware-accelerated Flutter rendering widgets and interactive viewport gestures for N-body celestial simulations.</li>
+          <li><strong><a href="https://pub.dev/packages/biometric_secure_vault">biometric_secure_vault</a>:</strong> Hardware-backed key-value storage gated behind biometric authentication prompts.</li>
+          <li><strong><a href="https://pub.dev/packages/ffr_crypto">ffr_crypto</a>:</strong> High-speed native RSA signature verification, AEAD, and hashing via dart:ffi bindings.</li>
         </ul>
       </section>
 
       <section>
-        <h2>03 // Command-Line Tools</h2>
+        <h2>04 // Systems Tools &amp; Homebrew Daemons</h2>
         <ul>
-          <li><a href="https://github.com/landxcape/mac-sym-offload">mso (mac-sym-offload)</a>: macOS developer SSD offloader &amp; atomic symlink cache manager (~/.android, Gradle, Xcode).</li>
-          <li><a href="https://github.com/landxcape/camgylph">camgylph</a>: Real-time CLI camera renderer converting webcam frames into ANSI terminal glyphs.</li>
-          <li><a href="https://github.com/landxcape/rscan">rscan</a>: High-speed Layer 2 ARP discovery and multi-threaded TCP port scanner with raw Ethernet frames.</li>
-          <li><a href="https://github.com/landxcape/synkrophase">synkrophase</a>: Zero-latency local network audio and media playback protocol synchronizer.</li>
+          <li><strong><a href="https://github.com/landxcape/mac-sym-offload">mso (mac-sym-offload)</a>:</strong> macOS developer SSD cache offloader and atomic symlink manager for Gradle, Android SDK, and Xcode artifacts.</li>
+          <li><strong><a href="https://github.com/landxcape/camgylph">camgylph</a>:</strong> Real-time CLI camera capture utility converting live webcam video streams into colored ANSI terminal glyphs.</li>
+          <li><strong><a href="https://github.com/landxcape/rscan">rscan</a>:</strong> High-speed Layer 2 ARP subnet scanner and multithreaded TCP port auditor using raw Ethernet sockets.</li>
+          <li><strong><a href="https://github.com/landxcape/synkrophase">synkrophase</a>:</strong> Zero-latency local network audio and media playback protocol synchronizer.</li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <p>Contact: shakyakpurna@gmail.com | +977 9843761711</p>
-      <p><a href="https://github.com/landxcape">GitHub</a> | <a href="https://linkedin.com/in/purnashakya">LinkedIn</a> | <a href="https://pub.dev/publishers/shakyapurna.com.np/packages">pub.dev</a></p>
+      <h2>Contact &amp; Developer Links</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:shakyakpurna@gmail.com">shakyakpurna@gmail.com</a> |
+        <strong>Phone:</strong> +977 9843761711
+      </p>
+      <p>
+        <a href="https://github.com/landxcape">GitHub // landxcape</a> |
+        <a href="https://linkedin.com/in/purnashakya">LinkedIn // purnashakya</a> |
+        <a href="https://pub.dev/publishers/shakyapurna.com.np/packages">pub.dev Publisher</a> |
+        <a href="https://shakyapurna.com.np/resume.pdf">Resume PDF</a>
+      </p>
       <p>© 2026 Purna Kalyan Shakya. All rights reserved.</p>
     </footer>
   </div>
@@ -499,8 +675,8 @@
           loader.remove();
         }, 300);
       }
-      var seo = document.getElementById('seo-root');
-      if (seo) seo.remove();
+      var fallback = document.getElementById('semantic-fallback');
+      if (fallback) fallback.remove();
     });
   </script>
   <script src="flutter_bootstrap.js" async></script>
