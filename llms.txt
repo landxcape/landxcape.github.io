@@ -1,4 +1,4 @@
-# Purna Kalyan Shakya // Senior Flutter & Systems Engineer
+# Purna Kalyan Shakya // Senior Flutter Engineer
 
 > Software engineer with an electronics engineering background, working primarily in Flutter, Dart, and native systems integration. Engineering focus centers on runtime predictability, offline-first architectures, and resilient developer tooling built for adverse hardware environments, bridging into native Android platform channels, C/Rust via Dart FFI, and WebAssembly (WASM).
 
