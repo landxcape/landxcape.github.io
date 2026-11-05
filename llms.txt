@@ -16,7 +16,7 @@
 ## Technical Summary
 - **Primary Framework & Languages**: Flutter, Dart, Rust, Kotlin, GLSL, Bash, WebAssembly (WASM).
 - **Core Engineering Paradigms**: Multithreaded Dart Isolates, Offline-First SQLite Architectures, Hardware-Accelerated CustomPainter / CanvasKit Shaders, Cryptographic Leases, Direct Binary Hardware Streaming (ESC/POS, APFS, Raw Ethernet Sockets).
-- **Production Scale**: 1,500+ Active Fleet Vehicles, 100+ Commercial Transit Displays, 30+ Handheld Android POS Terminals, 10 Published pub.dev Packages, 4 Systems CLI Tools.
+- **Operational Scale**: 1,500+ Active Fleet Vehicles, 100+ Commercial Transit Displays, 30+ Handheld Android POS Terminals, 10 Published pub.dev Packages, 4 Systems CLI Tools.
 
 ---
 
@@ -147,7 +147,7 @@ The web platform features interactive executable developer sandboxes running cli
 
 - `https://shakyapurna.com.np/` — Home overview, hero terminal, live atmospheric sky
 - `https://shakyapurna.com.np/overview` — Architectural profile, technical philosophy
-- `https://shakyapurna.com.np/systems` — Commercial production case studies
+- `https://shakyapurna.com.np/systems` — Commercial systems case studies
 - `https://shakyapurna.com.np/packages` — Open-source package registry
 - `https://shakyapurna.com.np/tools` — CLI developer tools & Homebrew formulas
 - `https://shakyapurna.com.np/lab` — Interactive Package Lab workbench

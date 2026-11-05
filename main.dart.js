@@ -19270,7 +19270,7 @@ r.toString
 A.fy(r)
 q=a.i(0,"swipeEdge")
 q.toString
-return new A.Ry(s,r,B.Rh[A.el(q)])},
+return new A.Ry(s,r,B.Ri[A.el(q)])},
 FX:function FX(a,b){this.a=a
 this.b=b},
 Ry:function Ry(a,b,c){this.a=a
@@ -26277,7 +26277,7 @@ $.aOB=o
 q=$.aOz
 B.b.cu($.jy,new A.a6y(o))
 if($.jy.length>=3)B.b.ew($.jy,0)
-p=B.R3[B.ac.ev(2)]
+p=B.R4[B.ac.ev(2)]
 B.ac.ev(1e5)
 $.jy.push(new A.yc(a,b+q,o,p))},
 aZf(a,b,c,d,e,f,g,a0){var s,r,q,p,o,n,m,l,k,j,i=null,h=e.a
@@ -26296,7 +26296,7 @@ n=28*q
 $.Z()
 m=A.ar()
 s=t.W
-m.scg(A.iT(o,n,A.b([B.a8.n(0.12*h),B.a8.n(0.02*h),B.a8.n(0)],s),B.QW,B.ag,i,i,0))
+m.scg(A.iT(o,n,A.b([B.a8.n(0.12*h),B.a8.n(0.02*h),B.a8.n(0)],s),B.QX,B.ag,i,i,0))
 a.e7(o,n,m)
 l=g.T(0,r.ab(0,1.55))
 k=24*q
@@ -26958,7 +26958,7 @@ m.push(new A.zR(o.a,o.b,s,r,q,a===o.c,null))}return m},
 aYr(a,b,c,d,e,f,g,h,i,j,k){return A.aO4(a,d,e,f,h,i,k)},
 aYq(a,b,c,d,e,f,g,h){var s,r,q,p,o=A.b([],t.p)
 for(s=0;s<3;++s){r={}
-q=B.Re[s]
+q=B.Rf[s]
 r.a=null
 p=q.c
 r.a=p
@@ -32236,7 +32236,7 @@ l.push(new A.eO(n[0],n[1],n[2],n[3],B.nC[m]))}return l},
 d8(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
-r=B.Rk[J.aS(s.affinity.value)]
+r=B.Rl[J.aS(s.affinity.value)]
 return new A.am(J.aS(s.pos),r)},
 N_(a){var s=this.a
 s===$&&A.a()
@@ -48729,7 +48729,7 @@ r=A.wJ(B.Wt,B.o,r==null?1:r)
 r.toString
 q=p.al(q.gp())
 if(q==null)q=1
-return A.xV(A.aRm(null,B.h,new A.wv(q,B.Ra,new A.dj(B.FM,this.e)),s,1,B.a3K),r)}}
+return A.xV(A.aRm(null,B.h,new A.wv(q,B.Rb,new A.dj(B.FM,this.e)),s,1,B.a3K),r)}}
 A.Lq.prototype={
 l(){var s=this,r=s.bf$
 if(r!=null)r.O(s.gf5())
@@ -87301,7 +87301,7 @@ g.p2=A.v(t.D2,q)
 p=g.p1
 s=s.c
 g.p1=A.v(s,q)
-for(o=0;o<11;++o){n=B.QQ[o]
+for(o=0;o<11;++o){n=B.QR[o]
 m=f.at7(n)
 l=m==null?null:m.a
 k=p.i(0,n)
@@ -92436,7 +92436,7 @@ A.OE.prototype={
 F(a){var s,r=this,q=null,p=r.d,o=r.e,n=o.as,m=t.p
 o=A.b([A.j("0"+r.c+" / 04 \u2022 "+p.c.toUpperCase(),q,q,q,q,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(o.a===B.b1?o.w:o.z,B.d,10.5,B.j,0.8),q,q),B.d8,A.j(p.d,q,q,q,q,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(n,B.d,10,B.v,0.8),q,q),B.kN],m)
 s=p.Q
-if(s.gbN(s)){m=A.b([A.j("PRODUCTION METRICS",q,q,q,q,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(n,B.d,9,B.j,0.8),q,q),B.ap],m)
+if(s.gbN(s)){m=A.b([A.j("OPERATIONAL METRICS",q,q,q,q,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(n,B.d,9,B.j,0.8),q,q),B.ap],m)
 s=s.gej()
 B.b.I(m,s.eI(s,new A.a9N(r),t.l7))
 m.push(B.aV)
@@ -92489,7 +92489,7 @@ $0(){return A.po(this.a.a.d)},
 $S:0}
 A.OG.prototype={
 F(a){var s,r,q,p,o,n=this,m=null,l=a.ag(t.q).f,k=A.L(m,m,B.h,m,m,new A.K(l.y,m,m,m,m,m,B.ar),m,6,m,m,m,m,6),j=t.p
-k=A.bv(B.V,A.b([k,A.j("KATHMANDU, NEPAL // PRODUCTION FLUTTER & DART",m,m,m,m,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(l.a===B.b1?l.w:l.z,B.d,10.5,B.j,1),m,m)],j),B.ah,8,12)
+k=A.bv(B.V,A.b([k,A.j("KATHMANDU, NEPAL // FLUTTER & SYSTEMS",m,m,m,m,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(l.a===B.b1?l.w:l.z,B.d,10.5,B.j,1),m,m)],j),B.ah,8,12)
 s=A.j("Purna Kalyan Shakya",m,m,m,m,A.aOc(l.z).auN(48,1.05,-1),m,m)
 r=l.Q
 q=A.j("Senior Flutter Engineer",m,m,m,m,A.v3(r).vp(18,0.2),m,m)
@@ -92679,7 +92679,7 @@ return A.W(A.b([r,B.C,A.bu(A.ae(A.b([A.W(A.b([new A.c0(1,B.a4,o,l),B.aP,A.j("\u2
 $S:61}
 A.BP.prototype={
 F(a){var s=null,r=a.ag(t.q).f
-return A.ae(A.b([A.j("02 // Open Source Packages",s,s,s,s,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(r.w,B.d,11,B.j,1),s,s),B.ap,A.j("Open-Source Libraries & Modules",s,s,s,s,A.v3(r.z).vp(26,-0.4),s,s),B.Z,new A.c4(B.lv,A.j("Libraries extracted from production constraints and published for the Dart & Flutter ecosystem.",s,s,s,s,A.cr(r.Q,1.55,14.5,B.t),s,s),s),B.kP,A.cv(new A.a9V(this,r,B.QB))],t.p),B.y,B.f,B.l)}}
+return A.ae(A.b([A.j("02 // Open Source Packages",s,s,s,s,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(r.w,B.d,11,B.j,1),s,s),B.ap,A.j("Open-Source Libraries & Modules",s,s,s,s,A.v3(r.z).vp(26,-0.4),s,s),B.Z,new A.c4(B.lv,A.j("Libraries extracted from field constraints and published for the Dart & Flutter ecosystem.",s,s,s,s,A.cr(r.Q,1.55,14.5,B.t),s,s),s),B.kP,A.cv(new A.a9V(this,r,B.QB))],t.p),B.y,B.f,B.l)}}
 A.a9V.prototype={
 $2(a,b){var s,r,q,p=null,o=t.p,n=A.b([],o)
 if(b.b>=720){s=this.b
@@ -93004,7 +93004,7 @@ B.b.I(a5,A.b([new A.at(B.r9,A.W(A.b([new A.at(B.LN,A.b1(B.np,a1,f,f,13),f),B.C,n
 A.Ai.prototype={
 anZ(){var s=this.d.a
 if(s==="scroll_texts_widget")return B.RE
-if(s==="repository_kit")return B.QX
+if(s==="repository_kit")return B.QY
 if(B.e.v(s,"nbody"))return B.SH
 return A.b([B.YB,B.Z2,B.YO],t.Wy)},
 F(a){var s,r,q,p,o,n=null,m=this.anZ(),l=this.c,k=l.c.n(0.65),j=A.a_(3),i=l.f,h=A.ad(i.n(0.6),0.6),g=l.w,f=t.p,e=A.W(A.b([A.b1(B.t3,g,n,n,14),B.S,new A.c0(1,B.a4,A.j("ENGINEERING MANIFESTO",n,B.G,n,n,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(g,B.d,10,B.j,0.5),n,n),n)],f),B.m,B.f,B.l,0),d=A.fT(i,1),c=l.as,b=A.b([A.j(this.e,n,n,n,n,A.cr(l.Q,1.6,13,B.t),n,n),B.aV,A.j("CORE DESIGN PILLARS",n,n,n,n,A.q().$5$color$decoration$fontSize$fontWeight$letterSpacing(c,B.d,9,B.j,0.6),n,n),B.Z],f)
@@ -93661,7 +93661,7 @@ aaS(){var s=this,r=null,q=B.k.bR(s.d.r.a.a,1000),p=s.c,o=p.w,n=t.p,m=A.W(A.b([s.
 o=A.aox(r,o,r,r,r,r,r,r,r,r,p.f,r,r,r,o.n(0.15),r,r,r,r,r,r,r,r,o,r,r,r,r,r,3,r,r,r,r,r,r)
 return A.ae(A.b([m,B.aD,A.aL1(A.aRW(28,3000,200,new A.a51(s),B.k.a6(q,200,3000)),o)],n),B.y,B.f,B.l)},
 aao(){var s=this.ES("INTERPOLATION CURVE"),r=t.lQ
-r=A.a4(new A.a0(B.QO,new A.a4Z(this),r),r.h("as.E"))
+r=A.a4(new A.a0(B.QP,new A.a4Z(this),r),r.h("as.E"))
 return A.ae(A.b([s,B.Z,A.bv(B.V,r,B.av,8,8)],t.p),B.y,B.f,B.l)},
 aaA(){var s=this.ES("TARGET FPS POLICY"),r=t.OQ
 r=A.a4(new A.a0(B.Pl,new A.a50(this),r),r.h("as.E"))
@@ -105260,9 +105260,9 @@ B.Pb=new A.D6(null,null,null,null,null,null,null,null,null,null,null,null,null,n
 B.nz=s([0,1],t.n)
 B.Pe=s([0,6,12,18],t.t)
 B.RF=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.R8=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.R9=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.Tb=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.Pf=s([B.RF,B.R8,B.Tb],t.zg)
+B.Pf=s([B.RF,B.R9,B.Tb],t.zg)
 B.Ph=s([0.75,0.9,1],t.n)
 B.ty=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.Pl=s([30,60,120],t.t)
@@ -105276,10 +105276,10 @@ B.PM=s([4,9,14,19],t.t)
 B.pj=new A.JI(0,"named")
 B.Fi=new A.JI(1,"anonymous")
 B.PZ=s([B.pj,B.Fi],A.aj("x<JI>"))
-B.Rc=s([0.41233895,0.35762064,0.18051042],t.n)
+B.Rd=s([0.41233895,0.35762064,0.18051042],t.n)
 B.Qz=s([0.2126,0.7152,0.0722],t.n)
 B.SZ=s([0.01932141,0.11916382,0.95034478],t.n)
-B.Q0=s([B.Rc,B.Qz,B.SZ],t.zg)
+B.Q0=s([B.Rd,B.Qz,B.SZ],t.zg)
 B.oU=new A.n2("FIGURE-8",0,"figureEight")
 B.a9j=new A.n2("URBAN CIRCUIT",1,"circuit")
 B.oV=new A.n2("MANUAL",2,"manual")
@@ -105322,18 +105322,18 @@ B.i6=new A.mX(3,"justify")
 B.aW=new A.mX(4,"start")
 B.i7=new A.mX(5,"end")
 B.Qj=s([B.db,B.ex,B.bT,B.i6,B.aW,B.i7],A.aj("x<mX>"))
-B.QL=s([2,1.13276676],t.n)
+B.QM=s([2,1.13276676],t.n)
 B.Pn=s([2.18349805,1.20311921],t.n)
 B.Sk=s([2.33888662,1.28698796],t.n)
 B.Sr=s([2.48660575,1.36351941],t.n)
 B.Qt=s([2.62226596,1.44717976],t.n)
 B.QD=s([2.7514899,1.53385819],t.n)
 B.Rt=s([3.36298265,1.98288283],t.n)
-B.QV=s([4.08649929,2.23811846],t.n)
-B.Rj=s([4.85481134,2.47563463],t.n)
+B.QW=s([4.08649929,2.23811846],t.n)
+B.Rk=s([4.85481134,2.47563463],t.n)
 B.Qy=s([5.62945551,2.72948597],t.n)
-B.QN=s([6.43023796,2.98020421],t.n)
-B.tB=s([B.QL,B.Pn,B.Sk,B.Sr,B.Qt,B.QD,B.Rt,B.QV,B.Rj,B.Qy,B.QN],t.zg)
+B.QO=s([6.43023796,2.98020421],t.n)
+B.tB=s([B.QM,B.Pn,B.Sk,B.Sr,B.Qt,B.QD,B.Rt,B.QW,B.Rk,B.Qy,B.QO],t.zg)
 B.qk=new A.n(1,1,0.37254901960784315,0.33725490196078434,B.i)
 B.acQ=new A.ze(B.qk,null)
 B.S=new A.bW(6,null,null,null)
@@ -105403,7 +105403,7 @@ B.Yt=new A.ab(B.h7,"easeOut (Immediate)")
 B.Yw=new A.ab(B.aL,"fastOutSlowIn")
 B.Ys=new A.ab(B.eU,"easeInOut")
 B.YQ=new A.ab(B.q2,"bounceOut")
-B.QO=s([B.YG,B.Yt,B.Yw,B.Ys,B.YQ],A.aj("x<+(eH,k)>"))
+B.QP=s([B.YG,B.Yt,B.Yw,B.Ys,B.YQ],A.aj("x<+(eH,k)>"))
 B.bj=new A.fu(0,"icon")
 B.bv=new A.fu(1,"input")
 B.aR=new A.fu(2,"label")
@@ -105415,7 +105415,7 @@ B.bn=new A.fu(7,"suffixIcon")
 B.ct=new A.fu(8,"helperError")
 B.cu=new A.fu(9,"counter")
 B.dK=new A.fu(10,"container")
-B.QQ=s([B.bj,B.bv,B.aR,B.bH,B.bI,B.bJ,B.aN,B.bn,B.ct,B.cu,B.dK],A.aj("x<fu>"))
+B.QR=s([B.bj,B.bv,B.aR,B.bH,B.bI,B.bJ,B.aN,B.bn,B.ct,B.cu,B.dK],A.aj("x<fu>"))
 B.tX=new A.mf("en",null,"US")
 B.tG=s([B.tX],t.ss)
 B.tH=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -105426,14 +105426,14 @@ B.abF=new A.ni(6,0.11)
 B.abD=new A.ni(8,0.12)
 B.abC=new A.ni(12,0.14)
 B.tI=s([B.abB,B.abG,B.abE,B.abF,B.abD,B.abC],A.aj("x<ni>"))
-B.QW=s([0,0.75,1],t.n)
+B.QX=s([0,0.75,1],t.n)
 B.Yo=new A.ab("Instant Cache Warmth (0ms)","Immediately returns local storage hit so the screen never displays an empty loading spinner.")
 B.YT=new A.ab("Deterministic Stream Concurrency","Emits typed RKitState states; keeps cached data intact during offline tunnel drops.")
 B.YE=new A.ab("Functional Error Boundaries","Surfaces failures without letting raw exceptions crash upstream view models.")
-B.QX=s([B.Yo,B.YT,B.YE],t.Wy)
+B.QY=s([B.Yo,B.YT,B.YE],t.Wy)
 B.Kk=new A.Bq(0,"sunburst")
 B.Kl=new A.Bq(1,"thermalGust")
-B.R3=s([B.Kk,B.Kl],A.aj("x<Bq>"))
+B.R4=s([B.Kk,B.Kl],A.aj("x<Bq>"))
 B.tJ=s([0,21,51,121,151,191,271,321,360],t.n)
 B.o4=new A.mo("FAST 5G",150,B.a1,0,"online5g")
 B.VQ=new A.mo("THROTTLED 3G",1200,B.a8,1,"throttled3g")
@@ -105446,16 +105446,16 @@ B.FJ=new A.Na(2,"outer")
 B.qr=new A.n(0.09803921568627451,0,0,0,B.i)
 B.o=new A.f(0,0)
 B.G7=new A.cz(0.2,B.FJ,B.qr,B.o,11)
-B.Ra=s([B.G7],t.F)
+B.Rb=s([B.G7],t.F)
 B.ZN=new A.C("\u229e","SYS",1)
 B.a0Q=new A.C("\ud83d\udce6","PKG",2)
 B.a0q=new A.C("\u26a1","CLI",3)
-B.Re=s([B.ZN,B.a0Q,B.a0q],A.aj("x<+(k,k,o)>"))
+B.Rf=s([B.ZN,B.a0Q,B.a0q],A.aj("x<+(k,k,o)>"))
 B.a4j=new A.FX(0,"left")
 B.a4k=new A.FX(1,"right")
-B.Rh=s([B.a4j,B.a4k],A.aj("x<FX>"))
+B.Ri=s([B.a4j,B.a4k],A.aj("x<FX>"))
 B.az=new A.Gc(0,"upstream")
-B.Rk=s([B.az,B.q],A.aj("x<Gc>"))
+B.Rl=s([B.az,B.q],A.aj("x<Gc>"))
 B.aE=new A.n_(0,"rtl")
 B.T=new A.n_(1,"ltr")
 B.nC=s([B.aE,B.T],A.aj("x<n_>"))
@@ -105549,16 +105549,16 @@ B.Sh=s(["animated_marker","isolate_runner_mixin"],t.s)
 B.VT={"FLEET CAPACITY":0,"BATCH WINDOW":1,"THREAD SAFETY":2,"MAP MOTION":3}
 B.V7=new A.b6(B.VT,["1,500+ Live Units","3.0s Windows","Worker Isolate Pool","Ticker Bearing Interpolation"],t.l)
 B.Ya=new A.kT("Real-Time Fleet Telemetry & Map Marker Interpolator","Slash Plus","Mar 2023 - Present",B.Sd,"1,500+ Active Vehicles \u2022 Sub-3s Coordinate Batching","Live tracking engine monitoring 1,500+ commercial vehicles across nationwide transit routes.","Incoming Socket.IO coordinate updates arrived so rapidly that deserializing JSON on Flutter's main thread saturated the UI isolate, causing severe frame drops and freezing map animations.","Offloaded payload deserialization to a persistent worker isolate pool. Batched coordinates into 3-second time windows and smoothed vehicle movement using custom ticker-driven bearing and coordinate interpolation.",B.Sh,B.V7)
-B.R9=s(["Flutter","Kotlin","MethodChannels","RSA Cryptography","SQLite","CustomPainter"],t.s)
+B.Ra=s(["Flutter","Kotlin","MethodChannels","RSA Cryptography","SQLite","CustomPainter"],t.s)
 B.Po=s(["scroll_texts_widget","resumable_downloader","ffr_crypto"],t.s)
 B.VV={"CRYPTO VALIDATION":0,"LATENCY CUT":1,"CACHE RETENTION":2,"DISK SYNC":3}
 B.UP=new A.b6(B.VV,["150ms (from 15s)","99% Reduction","SQLite Priority Queue","Resumable Multipart Range"],t.l)
-B.Yb=new A.kT("Offline-First Transit Media & Signage Player","Slash Plus","Mar 2023 - Present",B.R9,"99% Latency Cut (15s \u2192 150ms) \u2022 Offline-First Priority Queue","Autonomous infotainment and route display systems installed on public transit buses.","Buses frequently operate in cellular dead zones. On cold boot, cryptographic RSA signature verification on downloaded media bundles blocked app startup for up to 15 seconds on low-power hardware.","Engineered an offline-first priority queue that caches media locally in SQLite and synchronizes opportunistically when signal returns. Rewrote cryptographic RSA verification in Kotlin via Android platform channels, reducing startup validation time from 15s down to 150ms (a 99% latency reduction).",B.Po,B.UP)
-B.Rb=s(["Flutter","Android SDK","Bluetooth SPP","CustomPainter","RSA Sync","MethodChannels"],t.s)
+B.Yb=new A.kT("Offline-First Transit Media & Signage Player","Slash Plus","Mar 2023 - Present",B.Ra,"99% Latency Cut (15s \u2192 150ms) \u2022 Offline-First Priority Queue","Autonomous infotainment and route display systems installed on public transit buses.","Buses frequently operate in cellular dead zones. On cold boot, cryptographic RSA signature verification on downloaded media bundles blocked app startup for up to 15 seconds on low-power hardware.","Engineered an offline-first priority queue that caches media locally in SQLite and synchronizes opportunistically when signal returns. Rewrote cryptographic RSA verification in Kotlin via Android platform channels, reducing startup validation time from 15s down to 150ms (a 99% latency reduction).",B.Po,B.UP)
+B.Rc=s(["Flutter","Android SDK","Bluetooth SPP","CustomPainter","RSA Sync","MethodChannels"],t.s)
 B.RJ=s(["clean_feature_arch","repository_kit","biometric_secure_vault"],t.s)
 B.VU={"TERMINAL FLEET":0,"PRINT ENGINE":1,PROTOCOL:2,"OFFLINE SAFETY":3}
 B.V5=new A.b6(B.VU,["30+ Active Handhelds","Custom Canvas Byte Stream","Direct ESC/POS Driver","Signed Cryptographic Ledger"],t.l)
-B.Y9=new A.kT("Android POS Fleet & Direct Thermal Printer Engine","Slash Plus","Mar 2023 - Present",B.Rb,"30+ Android POS Terminals \u2022 Direct Canvas Thermal Printer","Fleet of 30+ handheld Android point-of-sale terminals with integrated hardware thermal printers.","Vendor-supplied thermal printer SDKs frequently crashed across hardware revisions. Intermittent connectivity at merchant checkouts created transaction state desynchronization and duplicate payments.","Bypassed unreliable proprietary printer SDKs by writing a custom Flutter Canvas painter that renders receipts directly into raw byte bitmaps streamed over ESC/POS protocols. Added an offline transaction queue that cryptographically signs receipts and syncs when connection re-establishes.",B.RJ,B.V5)
+B.Y9=new A.kT("Android POS Fleet & Direct Thermal Printer Engine","Slash Plus","Mar 2023 - Present",B.Rc,"30+ Android POS Terminals \u2022 Direct Canvas Thermal Printer","Fleet of 30+ handheld Android point-of-sale terminals with integrated hardware thermal printers.","Vendor-supplied thermal printer SDKs frequently crashed across hardware revisions. Intermittent connectivity at merchant checkouts created transaction state desynchronization and duplicate payments.","Bypassed unreliable proprietary printer SDKs by writing a custom Flutter Canvas painter that renders receipts directly into raw byte bitmaps streamed over ESC/POS protocols. Added an offline transaction queue that cryptographically signs receipts and syncs when connection re-establishes.",B.RJ,B.V5)
 B.RR=s(["Flutter","Dart","WebSockets","Google Maps","Clean Architecture","BLoC"],t.s)
 B.Wc={"STREAM ENGINE":0,ARCHITECTURE:1,"STATE PATTERN":2}
 B.V_=new A.b6(B.Wc,["WebSocket / Google Maps","Layer-Based Clean Arch","Event-Driven BLoC"],t.l)
@@ -105624,14 +105624,14 @@ B.Wa={STRATEGY:0,TYPING:1,SYNC:2}
 B.adO=new A.b6(B.Wa,["Cache-First / Revalidate","Either<AppError, T>","Persistent Queue"],t.l)
 B.OA=new A.dW("repository_kit","repository_kit","repository_kit","Offline-First & State","Pure Dart toolkit for offline-first repositories orchestrating cache-vs-remote strategies with functional Result types.",B.nt,"https://pub.dev/packages/repository_kit",B.Qi,B.cE,B.ee,!0)
 B.Nz=new A.ay(983358,"MaterialIcons",null,!1)
-B.Ri=s(["Rust FFI","RSA 2048","AEAD","Native Speed"],t.s)
+B.Rj=s(["Rust FFI","RSA 2048","AEAD","Native Speed"],t.s)
 B.We={SPEEDUP:0,VERIFICATION:1,BINDINGS:2}
 B.adL=new A.b6(B.We,["99% Latency Cut","150ms vs 15s Dart","dart:ffi Native C-ABI"],t.l)
-B.Os=new A.dW("ffr_crypto","ffr_crypto","ffr_crypto","Rust FFI & Cryptography","Rust-backed cryptographic engine providing high-speed RSA signature verification, AEAD encryption, and SHA hashing via dart:ffi.",B.Nz,"https://pub.dev/packages/ffr_crypto",B.Ri,B.cE,B.ee,!1)
-B.QT=s(["Biometrics","Keychain / Keystore","Hardware Security","Sealed"],t.s)
+B.Os=new A.dW("ffr_crypto","ffr_crypto","ffr_crypto","Rust FFI & Cryptography","Rust-backed cryptographic engine providing high-speed RSA signature verification, AEAD encryption, and SHA hashing via dart:ffi.",B.Nz,"https://pub.dev/packages/ffr_crypto",B.Rj,B.cE,B.ee,!1)
+B.QU=s(["Biometrics","Keychain / Keystore","Hardware Security","Sealed"],t.s)
 B.VY={HARDWARE:0,GATE:1,SAFETY:2}
 B.adC=new A.b6(B.VY,["Secure Enclave / Keystore","Biometric Prompt","Zero Plaintext Persistence"],t.l)
-B.Ot=new A.dW("biometric_secure_vault","biometric_secure_vault","biometric_secure_vault","Security & Biometrics","Hardware-backed key-value vault gated behind biometric prompts with sealed Result types and zero plaintext memory caching.",B.t8,"https://pub.dev/packages/biometric_secure_vault",B.QT,B.cE,B.hs,!1)
+B.Ot=new A.dW("biometric_secure_vault","biometric_secure_vault","biometric_secure_vault","Security & Biometrics","Hardware-backed key-value vault gated behind biometric prompts with sealed Result types and zero plaintext memory caching.",B.t8,"https://pub.dev/packages/biometric_secure_vault",B.QU,B.cE,B.hs,!1)
 B.ST=s(["CLI Tool","Clean Architecture","Code Generator","Dart 3"],t.s)
 B.W6={PATTERN:0,TARGET:1,STANDARDS:2}
 B.adD=new A.b6(B.W6,["Feature-First Layering","Enterprise Flutter","Strict Domain Boundaries"],t.l)
@@ -105690,7 +105690,7 @@ B.P_=new A.c1(37.7757,-122.4189)
 B.OD=new A.c1(37.7757,-122.4183)
 B.ON=new A.c1(37.7753,-122.4183)
 B.OK=new A.c1(37.7753,-122.4189)
-B.R5=s([B.P_,B.OD,B.ON,B.OK],t.q_)
+B.R6=s([B.P_,B.OD,B.ON,B.OK],t.q_)
 B.OL=new A.c1(37.7745,-122.4183)
 B.OP=new A.c1(37.7745,-122.4189)
 B.OH=new A.c1(37.774100000000004,-122.4189)
@@ -105705,12 +105705,12 @@ B.P6=new A.c1(37.7759,-122.41969999999999)
 B.OS=new A.c1(37.7759,-122.4191)
 B.P5=new A.c1(37.775400000000005,-122.4191)
 B.P0=new A.c1(37.775400000000005,-122.41969999999999)
-B.QU=s([B.P6,B.OS,B.P5,B.P0],t.q_)
+B.QV=s([B.P6,B.OS,B.P5,B.P0],t.q_)
 B.OM=new A.c1(37.7751,-122.4182)
 B.OO=new A.c1(37.7747,-122.4182)
 B.OE=new A.c1(37.7747,-122.4187)
 B.OR=new A.c1(37.7751,-122.4187)
-B.QP=s([B.OM,B.OO,B.OE,B.OR],t.q_)
+B.QQ=s([B.OM,B.OO,B.OE,B.OR],t.q_)
 B.OG=new A.c1(37.7744,-122.4191)
 B.P3=new A.c1(37.773900000000005,-122.4191)
 B.OW=new A.c1(37.773900000000005,-122.41969999999999)
@@ -105721,7 +105721,7 @@ B.P1=new A.c1(37.7751,-122.4206)
 B.OY=new A.c1(37.7751,-122.42009999999999)
 B.OV=new A.c1(37.7747,-122.42009999999999)
 B.PR=s([B.P4,B.P1,B.OY,B.OV],t.q_)
-B.tT=s([B.SC,B.R5,B.Sl,B.Ry,B.QU,B.QP,B.Pm,B.PR],A.aj("x<X<c1>>"))
+B.tT=s([B.SC,B.R6,B.Sl,B.Ry,B.QV,B.QQ,B.Pm,B.PR],A.aj("x<X<c1>>"))
 B.ab6=new A.aP(-97.00043600000001,24.308753)
 B.EW=new A.aP(0.46620531,0.43236573)
 B.a2J=new A.bS("body_alpha","BODY ALPHA",null,100,8,B.ab6,B.EW,4283999999,!0)
@@ -105858,15 +105858,15 @@ B.yO=new A.dU([B.ow,B.E,B.ot,B.E,B.ou,B.E,B.ov,B.E,B.DV,B.E,B.DS,B.E,B.DT,B.E,B.
 B.Wi={isolate_runner_mixin:0,resumable_downloader:1,ffr_crypto:2,biometric_secure_vault:3,clean_feature_arch:4}
 B.QH=s(["Persistent background worker with zero per-request thread spawn latency","Dedicated multi-core OS threads on native; cooperative microtasks on Web & WASM","Automatic RootIsolateToken bridging for background platform channels and plugins","Pre-flight serialization validation and typed IsolateWorkerRemoteException isolation"],t.s)
 B.VB=new A.fg("flutter pub add isolate_runner_mixin","import 'package:isolate_runner_mixin/isolate_runner_mixin.dart';","class DataSyncRepository with IsolateRunnerMixin {\n  // 1. One-shot task execution without manual port orchestration\n  Future<List<Item>> parseHeavyJson(String rawJson) => runInWorker(\n    task: (payload) => (jsonDecode(payload) as List)\n        .map((m) => Item.fromJson(m as Map<String, dynamic>))\n        .toList(),\n    message: rawJson,\n  );\n\n  // 2. Persistent background worker with multiplexed request-ID routing\n  Future<void> startWorker() => spawnWorker(onMessage: _dispatchCommand);\n  Future<HashResult> computeHash(String block) =>\n      requestWorker<HashResult>(command: 'hash', payload: block);\n}","Dart executes on a single-threaded UI loop. While Isolate.run() works for one-offs, recurring tasks suffer thread initialization latency and GC pauses when respawned repeatedly. isolate_runner_mixin provides persistent worker lifecycles with multiplexed request routing, automatic RootIsolateToken bridging for background plugins, and robust fault containment on native platforms (Android, iOS, macOS, Windows, Linux), with cooperative event-loop fallback on Web and WASM.",B.QH,null,null)
-B.R6=s(["RFC 7233 HTTP Range multipart byte requests","Persistent SQLite chunk state machine across app restarts","Automatic retry with exponential backoff and jitter","Built-in SHA-256 and MD5 checksum validation"],t.s)
-B.Vx=new A.fg("flutter pub add resumable_downloader","import 'package:resumable_downloader/resumable_downloader.dart';","final downloader = ResumableDownloader(\n  url: 'https://cdn.landxcape.dev/assets/model_weights.bin',\n  savePath: '/local/storage/weights.bin',\n  chunkSizeBytes: 1024 * 1024 * 4, // 4MB chunks\n);\n\ndownloader.progressStream.listen((event) {\n  print('Progress: ${event.percent}% - Speed: ${event.bytesPerSec / 1024} KB/s');\n});\n\nawait downloader.start();","Unstable cellular connections frequently sever long-running binary downloads. Traditional downloaders restart from byte 0, wasting user bandwidth. resumable_downloader parses HTTP Range headers (RFC 7233), persists completed chunk checkpoints to SQLite, and automatically verifies downloaded file integrity via SHA-256 upon assembly.",B.R6,null,null)
+B.R7=s(["RFC 7233 HTTP Range multipart byte requests","Persistent SQLite chunk state machine across app restarts","Automatic retry with exponential backoff and jitter","Built-in SHA-256 and MD5 checksum validation"],t.s)
+B.Vx=new A.fg("flutter pub add resumable_downloader","import 'package:resumable_downloader/resumable_downloader.dart';","final downloader = ResumableDownloader(\n  url: 'https://cdn.landxcape.dev/assets/model_weights.bin',\n  savePath: '/local/storage/weights.bin',\n  chunkSizeBytes: 1024 * 1024 * 4, // 4MB chunks\n);\n\ndownloader.progressStream.listen((event) {\n  print('Progress: ${event.percent}% - Speed: ${event.bytesPerSec / 1024} KB/s');\n});\n\nawait downloader.start();","Unstable cellular connections frequently sever long-running binary downloads. Traditional downloaders restart from byte 0, wasting user bandwidth. resumable_downloader parses HTTP Range headers (RFC 7233), persists completed chunk checkpoints to SQLite, and automatically verifies downloaded file integrity via SHA-256 upon assembly.",B.R7,null,null)
 B.Pg=s(["High-security Rust core compiled for ARM64 and x86_64","Sub-millisecond RSA and AEAD cryptographic operations","Zero-copy memory pointer sharing via dart:ffi","Protected against timing attacks through constant-time operations"],t.s)
-B.Vv=new A.fg("flutter pub add ffr_crypto","import 'package:ffr_crypto/ffr_crypto.dart';","// Ultra-fast RSA signature verification powered by Rust\nfinal isValid = FfrCrypto.verifyRsaSignature(\n  publicKeyPem: rsaPublicKeyPem,\n  messageBytes: payloadBytes,\n  signatureBase64: receivedSignature,\n  hashAlgorithm: HashAlgorithm.sha256,\n);\n\n// 99% faster than pure Dart big-integer math implementations","Pure Dart implementations of 2048-bit and 4096-bit RSA modular exponentiation take 150ms to 1,500ms on mobile CPUs, creating unacceptable authentication latency. ffr_crypto compiles high-security Rust cryptographic primitives (ring / openssl) down to native shared libraries, binding directly into Dart via zero-overhead dart:ffi.",B.Pg,null,null)
+B.Vu=new A.fg("flutter pub add ffr_crypto","import 'package:ffr_crypto/ffr_crypto.dart';","// Ultra-fast RSA signature verification powered by Rust\nfinal isValid = FfrCrypto.verifyRsaSignature(\n  publicKeyPem: rsaPublicKeyPem,\n  messageBytes: payloadBytes,\n  signatureBase64: receivedSignature,\n  hashAlgorithm: HashAlgorithm.sha256,\n);\n\n// 99% faster than pure Dart big-integer math implementations","Pure Dart implementations of 2048-bit and 4096-bit RSA modular exponentiation take 150ms to 1,500ms on mobile CPUs, creating unacceptable authentication latency. ffr_crypto compiles high-security Rust cryptographic primitives (ring / openssl) down to native shared libraries, binding directly into Dart via zero-overhead dart:ffi.",B.Pg,null,null)
 B.Q5=s(["Apple Secure Enclave and Android Keystore hardware binding","Biometric authentication gates (Touch ID, Face ID, Fingerprint)","Zero plaintext encryption key exposure in memory","Graceful fallback with strictly-typed failure results"],t.s)
-B.Vp=new A.fg("flutter pub add biometric_secure_vault","import 'package:biometric_secure_vault/biometric_secure_vault.dart';","final vault = BiometricSecureVault();\n\n// Write sensitive token\nawait vault.write(\n  key: 'jwt_auth_token',\n  value: secureToken,\n  requireBiometric: true,\n);\n\n// Read requires hardware biometric authentication prompt\nfinal result = await vault.read(\n  key: 'jwt_auth_token',\n  promptMessage: 'Authenticate to access banking session',\n);","Financial and healthcare applications cannot store cryptographic secrets in standard SharedPreferences or unprotected disk files. biometric_secure_vault interfaces directly with Apple Secure Enclave (Keychain Services) and Android Keystore (KeyGenParameterSpec with BiometricPrompt), ensuring encryption keys never exist in userland plaintext memory.",B.Q5,null,null)
-B.Rl=s(["Instant feature scaffolding with clean boundary enforcement","Automated test skeleton generation for BLoC and Repositories","Eliminates circular dependency traps in complex Flutter apps","Production-tested architecture conventions"],t.s)
-B.Vo=new A.fg("dart pub global activate clean_feature_arch","clean_feature_arch create feature <name>","# 1. Global CLI Scaffolding (Recommended)\n$ clean_feature_arch create feature payment_gateway \\\n    --type=bloc \\\n    --offline-first \\\n    --with-repository-kit\n\n# 2. Local Project Execution via dev_dependencies\n$ dart run clean_feature_arch:create feature order_checkout\n\n# 3. Architectural Lint Rule Boundary Verification\n$ dart run clean_feature_arch:lint --enforce-domain-purity","Scaling enterprise Flutter codebases requires disciplined separation between UI, Business Logic, and Data sources. clean_feature_arch automates the scaffolding of decoupled feature modules, enforcing explicit dependency flow and generating typed unit, repository, and widget test boilerplate out of the box.",B.Rl,"clean_feature_arch create feature <name>","dart run clean_feature_arch:create feature <name>")
-B.UK=new A.b6(B.Wi,[B.VB,B.Vx,B.Vv,B.Vp,B.Vo],t.G_)
+B.Vo=new A.fg("flutter pub add biometric_secure_vault","import 'package:biometric_secure_vault/biometric_secure_vault.dart';","final vault = BiometricSecureVault();\n\n// Write sensitive token\nawait vault.write(\n  key: 'jwt_auth_token',\n  value: secureToken,\n  requireBiometric: true,\n);\n\n// Read requires hardware biometric authentication prompt\nfinal result = await vault.read(\n  key: 'jwt_auth_token',\n  promptMessage: 'Authenticate to access banking session',\n);","Financial and healthcare applications cannot store cryptographic secrets in standard SharedPreferences or unprotected disk files. biometric_secure_vault interfaces directly with Apple Secure Enclave (Keychain Services) and Android Keystore (KeyGenParameterSpec with BiometricPrompt), ensuring encryption keys never exist in userland plaintext memory.",B.Q5,null,null)
+B.QL=s(["Instant feature scaffolding with clean boundary enforcement","Automated test skeleton generation for BLoC and Repositories","Eliminates circular dependency traps in complex Flutter apps","Field-tested architecture conventions"],t.s)
+B.Vw=new A.fg("dart pub global activate clean_feature_arch","clean_feature_arch create feature <name>","# 1. Global CLI Scaffolding (Recommended)\n$ clean_feature_arch create feature payment_gateway \\\n    --type=bloc \\\n    --offline-first \\\n    --with-repository-kit\n\n# 2. Local Project Execution via dev_dependencies\n$ dart run clean_feature_arch:create feature order_checkout\n\n# 3. Architectural Lint Rule Boundary Verification\n$ dart run clean_feature_arch:lint --enforce-domain-purity","Scaling enterprise Flutter codebases requires disciplined separation between UI, Business Logic, and Data sources. clean_feature_arch automates the scaffolding of decoupled feature modules, enforcing explicit dependency flow and generating typed unit, repository, and widget test boilerplate out of the box.",B.QL,"clean_feature_arch create feature <name>","dart run clean_feature_arch:create feature <name>")
+B.UK=new A.b6(B.Wi,[B.VB,B.Vx,B.Vu,B.Vo,B.Vw],t.G_)
 B.Tx=new A.h(33)
 B.Ty=new A.h(34)
 B.Tz=new A.h(35)
@@ -106309,17 +106309,17 @@ B.a1H=new A.fl(B.cP,B.kt)
 B.oj=new A.fl(B.bY,B.ku)
 B.UN=new A.dU([B.kI,B.H4,B.kL,B.pJ,B.a3f,B.pJ,B.E1,B.pL,B.E2,B.pQ,B.DR,B.pS,B.i2,B.a1G,B.i3,B.a1F,B.fr,B.a1I,B.fs,B.a1H,B.hX,B.oj,B.i_,B.kv],t.Fp)
 B.Wf={scroll_texts_widget:0,nbody_sim_flutter:1,nbody_sim_core:2,animated_marker:3,repository_kit:4}
-B.QS=s(["Direct Ticker-driven CustomPainter rendering","Streaming tokenizer for arbitrarily large text strings","Bidirectional auto-scrolling with configurable pause delays","Zero widget tree rebuild overhead during translation"],t.s)
-B.Vt=new A.fg("flutter pub add scroll_texts_widget","import 'package:scroll_texts_widget/scroll_texts_widget.dart';","// 1. Declarative Marquee Widget Setup\nScrollTextsWidget(\n  texts: const [\n    '\u25cf SYS_KERNEL: Barnes-Hut quadtree active',\n    '\u25cf STREAMING: Memory-bounded token window for arbitrarily large text payloads',\n  ],\n  controller: controller,\n  scrollSpeed: 65.0,             // Translation velocity in logical px/s\n  textDirection: TextDirection.ltr,\n  repeat: true,                  // Seamless playlist repeat\n  pauseDuration: Duration.zero,  // Delay between text items\n  renderMode: ScrollTextRenderMode.auto, // Auto-streams payloads >= 300 chars\n  textStyle: TextStyle(\n    fontSize: 13.0,\n    fontWeight: FontWeight.w600,\n    letterSpacing: 0.8,\n  ),\n)\n\n// 2. Programmatic Controller Transport & Jump\ncontroller.pause();                     // Suspend 60 FPS ticker\ncontroller.resume();                    // Resume continuous translation\ncontroller.jumpTo(0.0);                 // Reset current item offset\ncontroller.jumpToText(2, offset: 0.0);  // Direct jump to playlist item index\n\n// 3. Reactive Telemetry HUD\nListenableBuilder(\n  listenable: controller,\n  builder: (context, _) => Text(\n    'Item ${controller.currentTextIndex + 1} | ${(controller.progress * 100).toInt()}%',\n  ),\n);","Standard Flutter text marquees rely on continuous setState() calls or unconstrained horizontal list layouts, which cause repetitive widget tree layout passes and frame drops on low-power mobile GPUs. scroll_texts_widget completely decouples rendering from widget layout by drawing text layouts directly into a cached Flutter Ticker CustomPainter, maintaining smooth 60/120 FPS continuous scrolling with zero widget tree invalidation.",B.QS,null,null)
+B.QT=s(["Direct Ticker-driven CustomPainter rendering","Streaming tokenizer for arbitrarily large text strings","Bidirectional auto-scrolling with configurable pause delays","Zero widget tree rebuild overhead during translation"],t.s)
+B.Vs=new A.fg("flutter pub add scroll_texts_widget","import 'package:scroll_texts_widget/scroll_texts_widget.dart';","// 1. Declarative Marquee Widget Setup\nScrollTextsWidget(\n  texts: const [\n    '\u25cf SYS_KERNEL: Barnes-Hut quadtree active',\n    '\u25cf STREAMING: Memory-bounded token window for arbitrarily large text payloads',\n  ],\n  controller: controller,\n  scrollSpeed: 65.0,             // Translation velocity in logical px/s\n  textDirection: TextDirection.ltr,\n  repeat: true,                  // Seamless playlist repeat\n  pauseDuration: Duration.zero,  // Delay between text items\n  renderMode: ScrollTextRenderMode.auto, // Auto-streams payloads >= 300 chars\n  textStyle: TextStyle(\n    fontSize: 13.0,\n    fontWeight: FontWeight.w600,\n    letterSpacing: 0.8,\n  ),\n)\n\n// 2. Programmatic Controller Transport & Jump\ncontroller.pause();                     // Suspend 60 FPS ticker\ncontroller.resume();                    // Resume continuous translation\ncontroller.jumpTo(0.0);                 // Reset current item offset\ncontroller.jumpToText(2, offset: 0.0);  // Direct jump to playlist item index\n\n// 3. Reactive Telemetry HUD\nListenableBuilder(\n  listenable: controller,\n  builder: (context, _) => Text(\n    'Item ${controller.currentTextIndex + 1} | ${(controller.progress * 100).toInt()}%',\n  ),\n);","Standard Flutter text marquees rely on continuous setState() calls or unconstrained horizontal list layouts, which cause repetitive widget tree layout passes and frame drops on low-power mobile GPUs. scroll_texts_widget completely decouples rendering from widget layout by drawing text layouts directly into a cached Flutter Ticker CustomPainter, maintaining smooth 60/120 FPS continuous scrolling with zero widget tree invalidation.",B.QT,null,null)
 B.Qh=s(["Interactive pointer attractor and gravitational well injection","Configurable numerical integrators (Euler, Verlet, RK4)","Real-time Barnes-Hut spatial quadtree boundary visualization","Direct RepaintBoundary isolation for zero parent stage impact"],t.s)
 B.Vz=new A.fg("flutter pub add nbody_sim_flutter","import 'package:nbody_sim_flutter/nbody_sim_flutter.dart';","// 1. Declarative Simulation Canvas\nSimulationCanvas(\n  bodies: bodies,\n  config: SimulationConfig.scientificDefault,\n  cameraMode: CameraMode.fit,\n  cameraCenter: Vec2.zero,\n  cameraZoom: 1.0,\n  visualTheme: SimulatorVisualTheme.fromColorScheme(Theme.of(context).colorScheme),\n  renderOptions: const RenderOptions(\n    showVelocityVectors: true,\n    showTrails: true,\n  ),\n  trails: trails,\n  onSelectBody: (id) => selectBody(id),\n  onPanCamera: (delta) => panCamera(delta),\n  onZoomCamera: (factor) => zoomCamera(factor),\n  onMoveSelectedBody: (pos) => moveBody(pos),\n)\n\n// 2. Interactive Camera Manipulation\ncameraCenter = cameraCenter + delta; // Pan in world coordinates\ncameraZoom = (cameraZoom * factor).clamp(0.2, 8.0); // Multiplicative zoom\n\n// 3. Reactive State Binding\nValueListenableBuilder<SimulationState>(\n  valueListenable: stateNotifier,\n  builder: (context, state, _) => Text(\n    'T: ${state.simTime.toStringAsFixed(1)}s | Bodies: ${state.bodies.length}',\n  ),\n);","Simulating gravitational multi-body interactions at 60 FPS in Flutter requires separating mathematical calculation from UI rasterization. nbody_sim_flutter integrates the Barnes-Hut spatial quadtree approximation algorithm, reducing per-frame computational complexity from O(N\xb2) to O(N log N). Visual rendering uses direct canvas primitive batches to bypass rendering pipeline bottlenecks.",B.Qh,null,null)
 B.T1=s(["Pure Dart with 0 external dependencies","Runge-Kutta 4th Order (RK4) and Velocity Verlet integrators","Softening factor physics to prevent infinite force singularity","Serializable state snapshots for deterministic time-travel replay"],t.s)
 B.Vy=new A.fg("flutter pub add nbody_sim_core","import 'package:nbody_sim_core/nbody_sim_core.dart';","// 1. Engine Initialization & Configuration\nfinal engine = DartSimulationEngine();\nawait engine.initialize(\n  config: const SimulationConfig(\n    gravityConstant: 1.0,\n    softeningEpsilon: 1e-3,\n    dt: 0.016,\n    dtPolicy: DtPolicy.fixed,\n    integrator: IntegratorKind.rk4, // 4th-Order Runge-Kutta\n    collisionMode: CollisionMode.elastic,\n    deterministic: true,\n  ),\n  bodies: [\n    SimulationBody(\n      id: 'star_alpha',\n      mass: 500.0,\n      radius: 12.0,\n      position: Vec2(-50.0, 0.0),\n      velocity: Vec2(0.0, -1.5),\n      colorValue: 0xFFFFA657,\n    ),\n  ],\n);\n\n// 2. Numerical Integration Stepping\nfinal summary = await engine.step(1); // Step forward 16.6ms\n\n// 3. State & Vector Access\nfinal state = engine.getState();\nfinal alpha = state.bodies.first;\nprint('Alpha position: (${alpha.position.x}, ${alpha.position.y})');","A framework-agnostic mathematical physics engine authored in pure Dart. It supports multiple numerical integration schemes including 4th-Order Runge-Kutta (RK4), Symplectic Velocity Verlet, and Semi-Implicit Euler. Floating point operations are structured for SIMD vector acceleration and Isolate offloading.",B.T1,null,null)
 B.SR=s(["Declarative builder pattern decoupled from map rendering engine","Normalized shortest-path angular rotation eliminating 359\xb0->1\xb0 flip","Geodesic coordinate interpolation (LatLngExt.lerp)","Adaptive FPS profile throttling based on real-time FrameTimings"],t.s)
-B.Vs=new A.fg("flutter pub add animated_marker","import 'package:animated_marker/animated_marker.dart';","// 1. Declarative AnimatedMarker Setup\nAnimatedMarker(\n  animatedMarkers: {\n    Marker(\n      markerId: const MarkerId('courier_01'),\n      position: currentLatLng,\n      rotation: currentBearing, // Shortest-arc 0-360\xb0 rotation\n    ),\n  },\n  animationPolicy: const AnimationPolicy(\n    duration: Duration(milliseconds: 1200),\n    curve: Curves.easeInOut,\n    maxFps: 60,\n    adaptiveEnabled: true, // Auto-throttles under frame pressure\n  ),\n  builder: (context, animatedMarkers) {\n    // Drop-in compatible with GoogleMap or custom VectorMapView:\n    return GoogleMap(\n      markers: animatedMarkers,\n      initialCameraPosition: CameraPosition(target: currentLatLng, zoom: 15),\n    );\n  },\n);","When vehicle GPS telemetry streams updates every 2-5s, standard markers snap discontinuously, and rotational orientation flips 358\xb0 the wrong way when crossing 359\xb0 to 1\xb0. animated_marker eliminates marker teleportation through spherical geodesic interpolation (LatLngExt.lerp) and normalized shortest-arc angular delta calculation (-180\xb0 to 180\xb0), backed by frame-rate adaptive throttling.",B.SR,null,null)
+B.Vr=new A.fg("flutter pub add animated_marker","import 'package:animated_marker/animated_marker.dart';","// 1. Declarative AnimatedMarker Setup\nAnimatedMarker(\n  animatedMarkers: {\n    Marker(\n      markerId: const MarkerId('courier_01'),\n      position: currentLatLng,\n      rotation: currentBearing, // Shortest-arc 0-360\xb0 rotation\n    ),\n  },\n  animationPolicy: const AnimationPolicy(\n    duration: Duration(milliseconds: 1200),\n    curve: Curves.easeInOut,\n    maxFps: 60,\n    adaptiveEnabled: true, // Auto-throttles under frame pressure\n  ),\n  builder: (context, animatedMarkers) {\n    // Drop-in compatible with GoogleMap or custom VectorMapView:\n    return GoogleMap(\n      markers: animatedMarkers,\n      initialCameraPosition: CameraPosition(target: currentLatLng, zoom: 15),\n    );\n  },\n);","When vehicle GPS telemetry streams updates every 2-5s, standard markers snap discontinuously, and rotational orientation flips 358\xb0 the wrong way when crossing 359\xb0 to 1\xb0. animated_marker eliminates marker teleportation through spherical geodesic interpolation (LatLngExt.lerp) and normalized shortest-arc angular delta calculation (-180\xb0 to 180\xb0), backed by frame-rate adaptive throttling.",B.SR,null,null)
 B.Qn=s(["Pure reactive stream contract (RKitLoading -> RKitCache -> RKitSuccess/Failure)","Zero blank spinners via instant 0ms local disk cache emission","Stale-while-revalidate (SWR), cold-only, and air-gapped cache policies","Preserves cached data inside RKitFailure during dead-zone network drops"],t.s)
-B.Vw=new A.fg("flutter pub add repository_kit","import 'package:repository_kit/repository_kit.dart';","// 1. Subclass RKitRepository with Typed Model and Raw DTO\nclass FleetRepository extends RKitRepository<ManifestRecord, Map<String, dynamic>> {\n  @override\n  Future<ManifestRecord?> load() async => database.getCachedRecord();\n\n  @override\n  Future<Map<String, dynamic>> fetch() async => api.fetchLatestPayload();\n\n  @override\n  Future<void> persist(ManifestRecord record) async => database.save(record);\n\n  @override\n  ManifestRecord parse(Map<String, dynamic> raw) => ManifestRecord.fromJson(raw);\n}\n\n// 2. Consume Reactive watch() Stream with Dart 3 Pattern Matching\nfleetRepo.watch(cachePolicy: RKitCachePolicy.always).listen((state) {\n  switch (state) {\n    case RKitLoading():\n      showInlineSkeleton();\n    case RKitCache(:final data):\n      // Instant disk hit (0ms) - eliminates blank screen spinner\n      renderDisplay(data, isStale: true);\n    case RKitSuccess(:final data):\n      // Network completed - fresh cloud data rendered and persisted\n      renderDisplay(data, isStale: false);\n    case RKitFailure(:final error, :final data):\n      // Network severed (subway tunnel) - stale disk data preserved\n      showOfflineNotice(error, cachedBackup: data);\n  }\n});","Traditional mobile networking triggers full-screen loading spinners on every refresh and crashes or blanks out when the device enters a dead zone. repository_kit introduces a strict reactive offline-first stream contract (RKitRepository). It yields local disk cache in 0ms while revalidating in the background, guarantees zero unhandled exceptions, and retains stale cached data in memory during network disconnections.",B.Qn,null,null)
-B.UO=new A.b6(B.Wf,[B.Vt,B.Vz,B.Vy,B.Vs,B.Vw],t.G_)
+B.Vv=new A.fg("flutter pub add repository_kit","import 'package:repository_kit/repository_kit.dart';","// 1. Subclass RKitRepository with Typed Model and Raw DTO\nclass FleetRepository extends RKitRepository<ManifestRecord, Map<String, dynamic>> {\n  @override\n  Future<ManifestRecord?> load() async => database.getCachedRecord();\n\n  @override\n  Future<Map<String, dynamic>> fetch() async => api.fetchLatestPayload();\n\n  @override\n  Future<void> persist(ManifestRecord record) async => database.save(record);\n\n  @override\n  ManifestRecord parse(Map<String, dynamic> raw) => ManifestRecord.fromJson(raw);\n}\n\n// 2. Consume Reactive watch() Stream with Dart 3 Pattern Matching\nfleetRepo.watch(cachePolicy: RKitCachePolicy.always).listen((state) {\n  switch (state) {\n    case RKitLoading():\n      showInlineSkeleton();\n    case RKitCache(:final data):\n      // Instant disk hit (0ms) - eliminates blank screen spinner\n      renderDisplay(data, isStale: true);\n    case RKitSuccess(:final data):\n      // Network completed - fresh cloud data rendered and persisted\n      renderDisplay(data, isStale: false);\n    case RKitFailure(:final error, :final data):\n      // Network severed (subway tunnel) - stale disk data preserved\n      showOfflineNotice(error, cachedBackup: data);\n  }\n});","Traditional mobile networking triggers full-screen loading spinners on every refresh and crashes or blanks out when the device enters a dead zone. repository_kit introduces a strict reactive offline-first stream contract (RKitRepository). It yields local disk cache in 0ms while revalidating in the background, guarantees zero unhandled exceptions, and retains stale cached data in memory during network disconnections.",B.Qn,null,null)
+B.UO=new A.b6(B.Wf,[B.Vs,B.Vz,B.Vy,B.Vr,B.Vv],t.G_)
 B.W3={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Esc:49,Escape:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
 B.UQ=new A.b6(B.W3,[458907,458873,458978,458982,458833,458832,458831,458834,458881,458879,458880,458805,458801,458794,458799,458800,786544,786543,786980,786986,786981,786979,786983,786977,786982,458809,458806,458853,458976,458980,458890,458876,458875,458828,458791,458782,458783,458784,458785,458786,458787,458788,458789,458790,65717,786616,458829,458792,458798,458793,458793,458810,458819,458820,458821,458856,458857,458858,458859,458860,458861,458862,458811,458863,458864,458865,458866,458867,458812,458813,458814,458815,458816,458817,458818,458878,18,19,392961,392970,392971,392972,392973,392974,392975,392976,392962,392963,392964,392965,392966,392967,392968,392969,392977,392978,392979,392980,392981,392982,392983,392984,392985,392986,392987,392988,392989,392990,392991,458869,458826,16,458825,458852,458887,458889,458888,458756,458757,458758,458759,458760,458761,458762,458763,458764,458765,458766,458767,458768,458769,458770,458771,458772,458773,458774,458775,458776,458777,458778,458779,458780,458781,787101,458896,458897,458898,458899,458900,786836,786834,786891,786847,786826,786865,787083,787081,787084,786611,786609,786608,786637,786610,786612,786819,786615,786613,786614,458979,458983,24,458797,458891,458835,458850,458841,458842,458843,458844,458845,458846,458847,458848,458849,458839,458939,458968,458969,458885,458851,458836,458840,458855,458963,458962,458961,458960,458964,458837,458934,458935,458838,458868,458830,458827,458877,458824,458807,458854,458822,23,458915,458804,21,458823,458871,786850,458803,458977,458981,787103,458808,65666,458796,17,20,458795,22,458874,65667,786994],t.eL)
 B.UR=new A.dU([0,"FontWeight.w100",1,"FontWeight.w200",2,"FontWeight.w300",3,"FontWeight.w400",4,"FontWeight.w500",5,"FontWeight.w600",6,"FontWeight.w700",7,"FontWeight.w800",8,"FontWeight.w900"],A.aj("dU<o,k>"))
@@ -106441,7 +106441,7 @@ B.a10=new A.C("RANGE RESUME","RFC 7233 multipart byte requests resume after netw
 B.a_n=new A.C("STATE DURABILITY","SQLite chunk ledger preserves progress across app reboots","Crash-Resilient")
 B.a0a=new A.C("INTEGRITY VERIFICATION","Cryptographic SHA-256 / MD5 validation on reassembly","Digest Verified")
 B.a0g=new A.C("CONCURRENCY CONTROL","Dynamic connection pooling throttles cellular bandwidth","Bandwidth Safe")
-B.Rd=s([B.a10,B.a_n,B.a0a,B.a0g],t.D)
+B.Re=s([B.a10,B.a_n,B.a0a,B.a0g],t.D)
 B.a1a=new A.C("ZERO-COPY FFI","Native C-ABI pointer sharing between Dart heap and Rust core","< 1ms Verify")
 B.a0w=new A.C("SIDE-CHANNEL HARDENING","Constant-time operations prevent timing attack leaks","Constant-Time")
 B.a0n=new A.C("MEMORY SAFETY","Rust memory ownership model guarantees zero buffer overflows","Memory-Safe")
@@ -106451,7 +106451,7 @@ B.a_t=new A.C("HARDWARE ENCLAVE","Apple Secure Enclave & Android Keystore hardwa
 B.a_T=new A.C("ENROLLMENT TAMPER GUARD","Detects if new fingerprints or facial IDs were added in OS settings","Change Detection")
 B.a_9=new A.C("TYPED ERROR BOUNDARY","Sealed Result types eliminate uncaught runtime platform exceptions","Dart 3 Sealed")
 B.a0u=new A.C("BIOMETRIC GATE","Cryptographic keys accessible only after biometric prompt pass","Hardware-Gated")
-B.R4=s([B.a_t,B.a_T,B.a_9,B.a0u],t.D)
+B.R5=s([B.a_t,B.a_T,B.a_9,B.a0u],t.D)
 B.ZD=new A.C("DOMAIN ISOLATION","Core business logic isolated with zero framework dependencies","100% Pure Dart")
 B.a0f=new A.C("STATIC BOUNDARY LINTS","Analyzer plugin flags forbidden cross-layer dependency imports","Compiler-Enforced")
 B.Zl=new A.C("HARNESS GENERATION","Automated test skeleton scaffolding for BLoC and Repositories","Test-First Ready")
@@ -106461,7 +106461,7 @@ B.Zn=new A.C("APFS ATOMICITY","Directory clone and symlink swap guarded by trans
 B.a0B=new A.C("STORAGE INTEGRITY","Pre-flight validation verifying external SSD mount state and write access","Mount-Safe")
 B.a0Z=new A.C("HOST ZERO DATA LOSS","Double-pass size verification before purging local staging developer caches","Zero-Loss Guarantee")
 B.a_s=new A.C("CROSS-APFS LINKING","Seamless APFS volume-to-volume symlink re-linking across workstation reboot cycles","Volume Bound")
-B.Rg=s([B.Zn,B.a0B,B.a0Z,B.a_s],t.D)
+B.Rh=s([B.Zn,B.a0B,B.a0Z,B.a_s],t.D)
 B.a18=new A.C("SIMD COLOR MAPPING","Vectorized Euclidean distance calculation mapping RGB to terminal ANSI glyphs","< 2ms / Frame")
 B.a_B=new A.C("ZERO-ALLOC BUFFER","Reused pre-allocated stdout escape sequence memory chunks avoiding GC churn","Zero-Alloc Heap")
 B.a1_=new A.C("NATIVE FFMPEG PIPE","Direct hardware-accelerated video decode stream feeding raw frame matrix","60 FPS Target")
@@ -106477,17 +106477,17 @@ B.a0z=new A.C("UDP MULTICAST BEACON","Low-bandwidth periodic clock sync packets 
 B.a0o=new A.C("DYNAMIC JITTER BUFFER","Micro-sample adaptive audio queue absorbing irregular Wi-Fi latency spikes","Glitch-Free")
 B.a_2=new A.C("DISTRIBUTED TOPOLOGY","Decentralized beacon election with seamless fallback to standby master nodes","Fault-Tolerant")
 B.QA=s([B.ZQ,B.a0z,B.a0o,B.a_2],t.D)
-B.UX=new A.b6(B.VZ,[B.T8,B.RB,B.tx,B.tx,B.QJ,B.SQ,B.Rd,B.PY,B.R4,B.Sp,B.Rg,B.Pd,B.T5,B.QA],t.Tg)
+B.UX=new A.b6(B.VZ,[B.T8,B.RB,B.tx,B.tx,B.QJ,B.SQ,B.Re,B.PY,B.R5,B.Sp,B.Rh,B.Pd,B.T5,B.QA],t.Tg)
 B.z9={mso:0,camgylph:1,rscan:2,synkrophase:3}
 B.Tc=s(["APFS clone and symlink atomic transaction journal","Automatic mount-state discovery for external NVMe volumes","Safe rollback restore without host IDE restarts","Reclaims 100+ GB of primary internal Mac storage"],t.s)
 B.VA=new A.fg("brew install landxcape/tap/mso","mso status","# 1. Inspect current APFS offload volume and symlinks\n$ mso status\n\n# 2. Run diagnostic health check on external SSD mount state\n$ mso diagnose\n\n# 3. Atomically offload Android/Gradle/Xcode developer caches\n$ mso offload --target ~/.android\n$ mso offload --target ~/.gradle/caches\n\n# 4. Atomic rollback restore if external drive needs to be unmounted\n$ mso restore --target ~/.android","Modern mobile and web development tools (Xcode CoreSimulator, Gradle caches, Android AVDs) accumulate hundreds of gigabytes on macOS internal NVMe drives. mac-sym-offload (mso) solves SSD exhaustion by establishing transactional APFS symlink offloads to external high-speed storage. Built in Rust with atomic rollback journals, it guarantees that directory swaps and re-links never corrupt active IDE state even during sudden drive disconnects.",B.Tc,"mso status","brew tap landxcape/tap")
 B.T9=s(["SIMD-accelerated RGB to ANSI color quantization (< 2ms/frame)","Zero-allocation memory stdout buffer supporting up to 60 FPS streaming","Hardware-accelerated frame decode via native FFmpeg bindings","Supports 16-color, 256-color, and 24-bit TrueColor terminal profiles"],t.s)
-B.Vr=new A.fg("brew install landxcape/tap/camgylph","camgylph --fps 30","# 1. Stream live webcam feed rendered as ANSI glyphs in terminal\n$ camgylph --device 0 --fps 30\n\n# 2. High-fidelity 24-bit TrueColor ASCII matrix mode\n$ camgylph --color-mode truecolor --contrast 1.2\n\n# 3. Stream ANSI escape sequences directly into a file or pipe\n$ camgylph --fps 60 --record ./stream.ansi","Real-time terminal video rendering typically encounters severe latency bottlenecks due to per-pixel escape code formatting and terminal stdout I/O overhead. camgylph pipelines raw camera frames through hardware FFmpeg decoders, computes color quantization using SIMD vectorized Euclidean distance against ANSI palettes, and streams output via double-buffered memory chunks with configurable frame rate caps (defaulting to 30 FPS, scalable up to 60 FPS) to prevent terminal stdout buffer saturation.",B.T9,"camgylph --device 0 --fps 30","brew tap landxcape/tap")
+B.Vq=new A.fg("brew install landxcape/tap/camgylph","camgylph --fps 30","# 1. Stream live webcam feed rendered as ANSI glyphs in terminal\n$ camgylph --device 0 --fps 30\n\n# 2. High-fidelity 24-bit TrueColor ASCII matrix mode\n$ camgylph --color-mode truecolor --contrast 1.2\n\n# 3. Stream ANSI escape sequences directly into a file or pipe\n$ camgylph --fps 60 --record ./stream.ansi","Real-time terminal video rendering typically encounters severe latency bottlenecks due to per-pixel escape code formatting and terminal stdout I/O overhead. camgylph pipelines raw camera frames through hardware FFmpeg decoders, computes color quantization using SIMD vectorized Euclidean distance against ANSI palettes, and streams output via double-buffered memory chunks with configurable frame rate caps (defaulting to 30 FPS, scalable up to 60 FPS) to prevent terminal stdout buffer saturation.",B.T9,"camgylph --device 0 --fps 30","brew tap landxcape/tap")
 B.So=s(["Raw Ethernet frame crafting for line-speed Layer 2 ARP discovery","Non-blocking asynchronous TCP port probing (65k ports in sub-seconds)","Self-contained static binary with zero external dynamic dependencies","Clean CLI formatting and machine-readable JSON streaming"],t.s)
-B.Vq=new A.fg("brew install landxcape/tap/rscan","rscan arp 192.168.1.0/24","# 1. Broadcast Layer 2 ARP scan across local subnet\n$ rscan arp 192.168.1.0/24\n\n# 2. High-speed multi-threaded TCP port scan (65k ports in < 2s)\n$ rscan tcp 192.168.1.1 --ports 1-65535 --threads 128\n\n# 3. Emit machine-readable telemetry JSON stream\n$ rscan tcp 10.0.0.1 --ports 80,443,8080 --json | jq .","Network reconnaissance tools either rely on slow sequential socket connections or require heavy multi-megabyte C libraries. rscan is a fast, zero-dependency network scanner written in Rust. It crafts raw L2 Ethernet frames directly for microsecond ARP sweeps and utilizes an asynchronous, non-blocking epoll/kqueue event loop to probe thousands of TCP ports simultaneously without thread exhaustion.",B.So,"rscan arp 192.168.1.0/24","brew tap landxcape/tap")
+B.Vp=new A.fg("brew install landxcape/tap/rscan","rscan arp 192.168.1.0/24","# 1. Broadcast Layer 2 ARP scan across local subnet\n$ rscan arp 192.168.1.0/24\n\n# 2. High-speed multi-threaded TCP port scan (65k ports in < 2s)\n$ rscan tcp 192.168.1.1 --ports 1-65535 --threads 128\n\n# 3. Emit machine-readable telemetry JSON stream\n$ rscan tcp 10.0.0.1 --ports 80,443,8080 --json | jq .","Network reconnaissance tools either rely on slow sequential socket connections or require heavy multi-megabyte C libraries. rscan is a fast, zero-dependency network scanner written in Rust. It crafts raw L2 Ethernet frames directly for microsecond ARP sweeps and utilizes an asynchronous, non-blocking epoll/kqueue event loop to probe thousands of TCP ports simultaneously without thread exhaustion.",B.So,"rscan arp 192.168.1.0/24","brew tap landxcape/tap")
 B.SV=s(["Microsecond monotonic clock synchronization (< 500\xb5s drift)","Adaptive jitter buffer dynamically absorbs Wi-Fi latency spikes","UDP multicast transport prevents local network broadcast storms","Zero pitch-warping phase adjustment algorithm"],t.s)
-B.Vu=new A.fg("brew install landxcape/tap/synkrophase","synkrophase daemon","# 1. Start master clock synchronization daemon on host\n$ synkrophase daemon --bind 0.0.0.0:4848\n\n# 2. Lock client audio playback engine to master beacon\n$ synkrophase sync --master 192.168.1.100:4848 --latency-target 15ms\n\n# 3. Inspect real-time jitter, phase drift, and buffer metrics\n$ synkrophase status --watch","Distributing multi-room audio over standard Wi-Fi networks results in phase cancellation and audible echo due to clock oscillator divergence and asymmetric network jitter. synkrophase implements a precision PTP-inspired monotonic clock protocol over low-overhead UDP multicast. By calculating round-trip phase delta and dynamically modulating an adaptive micro-sample jitter buffer, it maintains sub-millisecond audio alignment across disparate consumer hardware.",B.SV,"synkrophase daemon --bind 0.0.0.0:4848","brew tap landxcape/tap")
-B.UY=new A.b6(B.z9,[B.VA,B.Vr,B.Vq,B.Vu],t.G_)
+B.Vt=new A.fg("brew install landxcape/tap/synkrophase","synkrophase daemon","# 1. Start master clock synchronization daemon on host\n$ synkrophase daemon --bind 0.0.0.0:4848\n\n# 2. Lock client audio playback engine to master beacon\n$ synkrophase sync --master 192.168.1.100:4848 --latency-target 15ms\n\n# 3. Inspect real-time jitter, phase drift, and buffer metrics\n$ synkrophase status --watch","Distributing multi-room audio over standard Wi-Fi networks results in phase cancellation and audible echo due to clock oscillator divergence and asymmetric network jitter. synkrophase implements a precision PTP-inspired monotonic clock protocol over low-overhead UDP multicast. By calculating round-trip phase delta and dynamically modulating an adaptive micro-sample jitter buffer, it maintains sub-millisecond audio alignment across disparate consumer hardware.",B.SV,"synkrophase daemon --bind 0.0.0.0:4848","brew tap landxcape/tap")
+B.UY=new A.b6(B.z9,[B.VA,B.Vq,B.Vp,B.Vt],t.G_)
 B.Zb=new A.C("mso status","CLI command","Inspects current APFS volume clone ratio, active symlinks, and available host storage.")
 B.Zo=new A.C("mso diagnose","CLI command","Performs diagnostic health checks on external SSD mount state and dangling symlinks.")
 B.Ze=new A.C("mso offload --target <path>","CLI command","Atomically clones directory to external APFS volume and establishes target symlink with rollback journal.")
@@ -106496,7 +106496,7 @@ B.a_C=new A.C("mso repair --relink","CLI command","Reconciles broken symlink pat
 B.a_E=new A.C("mso list --targets","CLI command","Enumerates all offloaded developer directories (~/.android, ~/.gradle, Xcode CoreSimulator).")
 B.Zi=new A.C("ApfsVolumeManager","Rust engine","Low-level APFS clone engine leveraging clonefile(2) for zero-latency local deduplication.")
 B.a0s=new A.C("RollbackJournal","Rust engine","Crash-safe transaction journal preventing data loss during power loss or drive disconnects.")
-B.Rf=s([B.Zb,B.Zo,B.Ze,B.a17,B.a_C,B.a_E,B.Zi,B.a0s],t.D)
+B.Rg=s([B.Zb,B.Zo,B.Ze,B.a17,B.a_C,B.a_E,B.Zi,B.a0s],t.D)
 B.a__=new A.C("camgylph --device <id>","CLI command","Captures live video frame stream from webcam or virtual video device (default device: 0).")
 B.a_U=new A.C("camgylph --fps <rate>","CLI command","Locks ANSI terminal rendering refresh rate budget (e.g. --fps 30, --fps 60).")
 B.ZS=new A.C("camgylph --color-mode <mode>","CLI command","Sets ANSI terminal color depth: 16-color, 256-color, or truecolor (24-bit RGB).")
@@ -106514,7 +106514,7 @@ B.a_Z=new A.C("rscan --json","CLI command","Emits machine-readable telemetry JSO
 B.ZA=new A.C("RawEthernetSocket","Rust engine","Direct AF_PACKET / BPF socket crafting bypassing kernel TCP stack overhead.")
 B.ZJ=new A.C("AsyncPortPoller","Rust engine","Non-blocking epoll/kqueue event loop polling thousands of concurrent TCP sockets.")
 B.a0_=new A.C("SubnetResolver","Rust engine","IPv4/IPv6 CIDR parser and interface gateway routing table enumerator.")
-B.R7=s([B.a_b,B.Zh,B.ZT,B.a_w,B.a_Z,B.ZA,B.ZJ,B.a0_],t.D)
+B.R8=s([B.a_b,B.Zh,B.ZT,B.a_w,B.a_Z,B.ZA,B.ZJ,B.a0_],t.D)
 B.Zw=new A.C("synkrophase daemon","CLI command","Starts local network master clock beacon daemon on host (e.g. --bind 0.0.0.0:4848).")
 B.a0v=new A.C("synkrophase sync --master <ip:port>","CLI command","Locks client audio playback engine clock to master beacon with microsecond drift compensation.")
 B.a_W=new A.C("synkrophase status","CLI command","Displays real-time monotonic drift (\xb5s), round-trip phase delta, and adaptive buffer lag.")
@@ -106523,7 +106523,7 @@ B.ZP=new A.C("MonotonicClockEngine","Rust engine","Precision PTP-style oscillato
 B.a0M=new A.C("UdpMulticastBeacon","Rust engine","Low-overhead timestamp broadcast protocol running over UDP multicast.")
 B.a14=new A.C("AdaptiveJitterBuffer","Rust engine","Micro-sample dynamic audio buffer absorbing Wi-Fi packet latency jitter.")
 B.T6=s([B.Zw,B.a0v,B.a_W,B.a1b,B.ZP,B.a0M,B.a14],t.D)
-B.UZ=new A.b6(B.z9,[B.Rf,B.SD,B.R7,B.T6],t.Tg)
+B.UZ=new A.b6(B.z9,[B.Rg,B.SD,B.R8,B.T6],t.Tg)
 B.Wm={type:0}
 B.V0=new A.b6(B.Wm,["line"],t.l)
 B.V2=new A.b6(B.bA,[],A.aj("b6<jE,O>"))
@@ -106585,22 +106585,22 @@ B.Si=s([B.yG,null,null,B.eo],t.L)
 B.Sm=s([B.yH,null,null,B.hI],t.L)
 B.Qa=s([B.hD,B.hD,B.k0,null],t.L)
 B.SL=s([B.jX,null,B.jX,null],t.L)
-B.QY=s([B.cF,null,null,B.el],t.L)
-B.QZ=s([B.ck,null,null,B.em],t.L)
-B.R_=s([B.cl,null,null,B.en],t.L)
+B.QZ=s([B.cF,null,null,B.el],t.L)
+B.R_=s([B.ck,null,null,B.em],t.L)
+B.R0=s([B.cl,null,null,B.en],t.L)
 B.SU=s([B.cG,null,null,B.eo],t.L)
 B.Sw=s([B.nL,null,null,B.nS],t.L)
 B.Qb=s([B.hC,B.hC,B.k_,null],t.L)
 B.RI=s([B.bs,null,null,B.ek],t.L)
-B.R0=s([B.eh,null,null,B.hF],t.L)
+B.R1=s([B.eh,null,null,B.hF],t.L)
 B.Q2=s([B.jW,null,null,B.nQ],t.L)
-B.R1=s([B.ei,null,null,B.hH],t.L)
+B.R2=s([B.ei,null,null,B.hH],t.L)
 B.Sx=s([B.hB,null,null,B.nR],t.L)
 B.Qc=s([B.hE,B.hE,B.k1,null],t.L)
-B.R2=s([B.hz,null,null,B.hG],t.L)
+B.R3=s([B.hz,null,null,B.hG],t.L)
 B.RS=s([B.hA,null,null,B.hI],t.L)
 B.Qd=s([B.dB,B.dB,B.ej,null],t.L)
-B.V4=new A.dU(["*",B.PW,"+",B.Sg,"-",B.QK,".",B.Rr,"/",B.Pc,"0",B.SK,"1",B.SB,"2",B.Q4,"3",B.SX,"4",B.SA,"5",B.Q3,"6",B.Pi,"7",B.Qq,"8",B.Si,"9",B.Sm,"Alt",B.Qa,"AltGraph",B.SL,"ArrowDown",B.QY,"ArrowLeft",B.QZ,"ArrowRight",B.R_,"ArrowUp",B.SU,"Clear",B.Sw,"Control",B.Qb,"Delete",B.RI,"End",B.R0,"Enter",B.Q2,"Home",B.R1,"Insert",B.Sx,"Meta",B.Qc,"PageDown",B.R2,"PageUp",B.RS,"Shift",B.Qd],A.aj("dU<k,X<h?>>"))
+B.V4=new A.dU(["*",B.PW,"+",B.Sg,"-",B.QK,".",B.Rr,"/",B.Pc,"0",B.SK,"1",B.SB,"2",B.Q4,"3",B.SX,"4",B.SA,"5",B.Q3,"6",B.Pi,"7",B.Qq,"8",B.Si,"9",B.Sm,"Alt",B.Qa,"AltGraph",B.SL,"ArrowDown",B.QZ,"ArrowLeft",B.R_,"ArrowRight",B.R0,"ArrowUp",B.SU,"Clear",B.Sw,"Control",B.Qb,"Delete",B.RI,"End",B.R1,"Enter",B.Q2,"Home",B.R2,"Insert",B.Sx,"Meta",B.Qc,"PageDown",B.R3,"PageUp",B.RS,"Shift",B.Qd],A.aj("dU<k,X<h?>>"))
 B.W9={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.yV=new A.b6(B.W9,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.l)
 B.W5={"zh-Hant":0,"zh-TW":1,"zh-MO":2,"zh-HK":3,ja:4,ko:5,zh:6,"zh-Hans":7,"zh-CN":8}
@@ -106900,7 +106900,7 @@ B.Zt=new A.C("DownloadStatus","enum","Observable state: idle, enqueued, download
 B.a1e=new A.C("DownloadUpdate","class","Real-time stream update with bytes transferred, total length, speed, and percentage.")
 B.a19=new A.C("DownloadIntegrityException","class","Exception thrown when assembled file digest mismatches the expected checksum.")
 B.a07=new A.C("ExistingFilePolicy","enum","Conflict policy when target file exists: overwrite, resume, or fail.")
-B.QR=s([B.a_7,B.a_H,B.Zm,B.a03,B.a1c,B.a_Q,B.Zt,B.a1e,B.a19,B.a07],t.D)
+B.QS=s([B.a_7,B.a_H,B.Zm,B.a03,B.a1c,B.a_Q,B.Zt,B.a1e,B.a19,B.a07],t.D)
 B.a0h=new A.C("Aead","class","Authenticated encryption with associated data: AES-256-GCM and ChaCha20-Poly1305.")
 B.a_e=new A.C("Rsa","class","RSA-2048/4096 OAEP encryption and PSS signature verification backed by Rust ring.")
 B.Zf=new A.C("Ecc","class","Elliptic curve cryptography supporting Ed25519 signatures and X25519 key exchange.")
@@ -106920,7 +106920,7 @@ B.a0y=new A.C("containsKey()","Future<bool>","Checks whether the secure store ho
 B.ZI=new A.C("clear()","Future<void>","Purges all stored keys and metadata from the secure vault.")
 B.a0N=new A.C("BiometricAvailability","enum","Hardware status: available, notEnrolled, unsupported, and lockedOut.")
 B.a_u=new A.C("VaultResult<T>","sealed class","Pattern-matchable outcome: VaultSuccess, VaultError, VaultEmpty, VaultCancelled.")
-B.QM=s([B.a_P,B.a_a,B.Zz,B.Zs,B.Zq,B.Zj,B.a0y,B.ZI,B.a0N,B.a_u],t.D)
+B.QN=s([B.a_P,B.a_a,B.Zz,B.Zs,B.Zq,B.Zj,B.a0y,B.ZI,B.a0N,B.a_u],t.D)
 B.a0D=new A.C("clean_feature_arch create feature <name>","CLI command","Generates domain, data, and presentation layers (--type=bloc|cubit, --offline-first, --with-repository-kit).")
 B.a0F=new A.C("clean_feature_arch create contract <name>","CLI command","Generates decoupled repository interface, entity DTOs, and failure definitions.")
 B.ZV=new A.C("clean_feature_arch lint","CLI / analyzer","Static analyzer plugin checking architectural boundaries and flagging unauthorized imports.")
@@ -106930,7 +106930,7 @@ B.a0U=new A.C("FeatureGenerator","core engine","Dart AST template engine renderi
 B.a0P=new A.C("StateManagementType","flag enum","Supported state boilerplate generator targets: bloc, cubit, and riverpod.")
 B.a02=new A.C("DataLayerType","flag enum","Supported data layer template strategies: offlineFirst, remoteOnly, and localCache.")
 B.T3=s([B.a0D,B.a0F,B.ZV,B.a_D,B.a0L,B.a0U,B.a0P,B.a02],t.D)
-B.Va=new A.b6(B.W_,[B.QR,B.SI,B.QM,B.T3],t.Tg)
+B.Va=new A.b6(B.W_,[B.QS,B.SI,B.QN,B.T3],t.Tg)
 B.nW=new A.mj("courier_0")
 B.dC=new A.f(0.5,1)
 B.Vd=new A.dY(B.nW,null,1,B.dC,!1,!1,!1,B.dl,B.dm,B.jP,0,!0,0,null,null,null,null)
