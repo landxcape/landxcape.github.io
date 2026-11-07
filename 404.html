@@ -16,6 +16,21 @@
   -->
   <base href="/">
 
+  <script>
+    (function () {
+      var hash = window.location.hash;
+      if (hash && hash.startsWith('#/')) {
+        var targetPath = hash.substring(1);
+        var search = window.location.search;
+        if (targetPath.indexOf('?') !== -1 && search) {
+          window.history.replaceState(null, '', targetPath);
+        } else {
+          window.history.replaceState(null, '', targetPath + search);
+        }
+      }
+    })();
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
