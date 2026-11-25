@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <script>
+    (function () {
+      var hash = window.location.hash;
+      if (hash && hash.startsWith('#/') && !hash.startsWith('#//')) {
+        var targetPath = hash.substring(1);
+        var search = window.location.search;
+        if (targetPath.indexOf('?') !== -1 && search) {
+          window.history.replaceState(null, '', targetPath);
+        } else {
+          window.history.replaceState(null, '', targetPath + search);
+        }
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Senior Flutter Engineer based in Kathmandu, Nepal. Developing primarily in Flutter and Dart across offline-first architectures, mobile systems, and open-source packages.">
+  <meta name="theme-color" content="#0B0D0E" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ECE7DF" media="(prefers-color-scheme: light)">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://shakyapurna.com.np/lab/synkrophase/api">
+
+  <!-- Standardized LLM Context Discovery -->
+  <link rel="alternate" type="text/plain" href="https://shakyapurna.com.np/llms.txt" title="LLM Context">
+
+  <!-- W3C Geographic Metadata (Kathmandu, Nepal) -->
+  <meta name="geo.region" content="NP-P3">
+  <meta name="geo.placename" content="Kathmandu">
+  <meta name="geo.position" content="27.7172;85.3240">
+  <meta name="ICBM" content="27.7172, 85.3240">
+
+  <!-- OpenGraph Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal">
+  <meta property="og:description" content="Senior Flutter Engineer based in Kathmandu, Nepal. Developing primarily in Flutter and Dart across offline-first architectures, mobile systems, and open-source packages.">
+  <meta property="og:url" content="https://shakyapurna.com.np/lab/synkrophase/api">
+  <meta property="og:site_name" content="Purna Kalyan Shakya Engineering Portfolio">
+  <meta property="og:image" content="https://shakyapurna.com.np/icons/Icon-512.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:type" content="image/png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal">
+  <meta name="twitter:description" content="Senior Flutter Engineer based in Kathmandu, Nepal. Developing primarily in Flutter and Dart across offline-first architectures, mobile systems, and open-source packages.">
+  <meta name="twitter:image" content="https://shakyapurna.com.np/icons/Icon-512.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Purna Shakya">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Google Fonts Preconnect & Stylesheet Preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Structured JSON-LD Data for Search Engine Knowledge Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://shakyapurna.com.np/#profilepage",
+        "url": "https://shakyapurna.com.np/",
+        "name": "Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal",
+        "description": "Personal portfolio, open-source package workbench, and developer tools by Senior Flutter Engineer Purna Kalyan Shakya.",
+        "mainEntity": {
+          "@id": "https://shakyapurna.com.np/#person"
+        },
+        "isPartOf": {
+          "@id": "https://shakyapurna.com.np/#website"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://shakyapurna.com.np/#person",
+        "name": "Purna Kalyan Shakya",
+        "alternateName": "landxcape",
+        "jobTitle": "Senior Flutter Engineer",
+        "description": "Senior Flutter Engineer based in Kathmandu, Nepal. Developing primarily in Flutter and Dart across offline-first architectures, mobile systems, and open-source packages.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kathmandu",
+          "addressCountry": "Nepal"
+        },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Nepal Engineering College"
+        },
+        "url": "https://shakyapurna.com.np/",
+        "image": "https://shakyapurna.com.np/icons/Icon-512.png",
+        "email": "mailto:shakyakpurna@gmail.com",
+        "sameAs": [
+          "https://github.com/landxcape",
+          "https://linkedin.com/in/purnashakya",
+          "https://pub.dev/publishers/shakyapurna.com.np/packages"
+        ],
+        "knowsAbout": [
+          "Flutter",
+          "Dart",
+          "Dart FFI",
+          "Mobile Application Development",
+          "Offline-First Systems",
+          "Isolates Concurrency",
+          "Android Platform Channels"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://shakyapurna.com.np/#website",
+        "url": "https://shakyapurna.com.np/",
+        "name": "Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal",
+        "description": "Personal portfolio, open-source package workbench, and developer tools by Senior Flutter Engineer Purna Kalyan Shakya.",
+        "publisher": {
+          "@id": "https://shakyapurna.com.np/#person"
+        },
+        "hasPart": [
+          { "@id": "https://shakyapurna.com.np/#package-animated_marker" },
+          { "@id": "https://shakyapurna.com.np/#package-scroll_texts_widget" },
+          { "@id": "https://shakyapurna.com.np/#package-isolate_runner_mixin" },
+          { "@id": "https://shakyapurna.com.np/#package-resumable_downloader" },
+          { "@id": "https://shakyapurna.com.np/#package-repository_kit" },
+          { "@id": "https://shakyapurna.com.np/#package-clean_feature_arch" },
+          { "@id": "https://shakyapurna.com.np/#package-nbody_sim_core" },
+          { "@id": "https://shakyapurna.com.np/#package-nbody_sim_flutter" },
+          { "@id": "https://shakyapurna.com.np/#package-biometric_secure_vault" },
+          { "@id": "https://shakyapurna.com.np/#package-ffr_crypto" },
+          { "@id": "https://shakyapurna.com.np/#tool-mso" },
+          { "@id": "https://shakyapurna.com.np/#tool-camgylph" },
+          { "@id": "https://shakyapurna.com.np/#tool-rscan" },
+          { "@id": "https://shakyapurna.com.np/#tool-synkrophase" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://shakyapurna.com.np/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Overview",
+            "item": "https://shakyapurna.com.np/overview"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Commercial Systems",
+            "item": "https://shakyapurna.com.np/systems"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Open Source Packages",
+            "item": "https://shakyapurna.com.np/packages"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Developer Tools",
+            "item": "https://shakyapurna.com.np/tools"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Package Lab Workbench",
+            "item": "https://shakyapurna.com.np/lab"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-animated_marker",
+        "name": "animated_marker",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Flutter",
+        "description": "Smooth Google Maps marker animation engine with geodesic bearing interpolation and spherical coordinate math for live fleet tracking.",
+        "url": "https://pub.dev/packages/animated_marker",
+        "codeRepository": "https://github.com/landxcape/animated_marker",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/animated_marker"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-scroll_texts_widget",
+        "name": "scroll_texts_widget",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Flutter",
+        "description": "High-performance continuous marquee text ticker that bypasses widget tree layout passes via dedicated Flutter Ticker painters.",
+        "url": "https://pub.dev/packages/scroll_texts_widget",
+        "codeRepository": "https://github.com/landxcape/scroll_texts_widget",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/scroll_texts_widget"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-isolate_runner_mixin",
+        "name": "isolate_runner_mixin",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Dart / Flutter",
+        "description": "Cross-platform concurrency mixin for persistent background workers with multiplexed RPC, native OS thread execution, and universal Web/WASM compilation.",
+        "url": "https://pub.dev/packages/isolate_runner_mixin",
+        "codeRepository": "https://github.com/landxcape/isolate_runner_mixin",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/isolate_runner_mixin"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-resumable_downloader",
+        "name": "resumable_downloader",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Dart / Flutter",
+        "description": "Multipart HTTP range downloader with durable pause/resume, persistent SQLite scheduling, and MD5/SHA256 integrity validation.",
+        "url": "https://pub.dev/packages/resumable_downloader",
+        "codeRepository": "https://github.com/landxcape/resumable_downloader",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/resumable_downloader"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-repository_kit",
+        "name": "repository_kit",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Dart / Flutter",
+        "description": "Pure Dart toolkit for offline-first repositories orchestrating cache-vs-remote strategies with functional Result types.",
+        "url": "https://pub.dev/packages/repository_kit",
+        "codeRepository": "https://github.com/landxcape/repository_kit",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/repository_kit"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-clean_feature_arch",
+        "name": "clean_feature_arch",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Dart CLI",
+        "description": "Feature-first Clean Architecture scaffolding toolkit with Dart 3 enforcement rules, layer boundaries, and boilerplate generators.",
+        "url": "https://pub.dev/packages/clean_feature_arch",
+        "codeRepository": "https://github.com/landxcape/clean_feature_arch",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/clean_feature_arch"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-nbody_sim_core",
+        "name": "nbody_sim_core",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Dart / Flutter",
+        "description": "Engine-agnostic N-body gravitational simulation core models with numerical integrators (Euler, Velocity Verlet, Runge-Kutta 4th Order).",
+        "url": "https://pub.dev/packages/nbody_sim_core",
+        "codeRepository": "https://github.com/landxcape/nbody_sim_core",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/nbody_sim_core"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-nbody_sim_flutter",
+        "name": "nbody_sim_flutter",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Flutter",
+        "description": "Flutter rendering widgets, interactive gesture viewport controls, and theme primitives for real-time gravitational N-body simulations.",
+        "url": "https://pub.dev/packages/nbody_sim_flutter",
+        "codeRepository": "https://github.com/landxcape/nbody_sim_flutter",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/nbody_sim_flutter"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-biometric_secure_vault",
+        "name": "biometric_secure_vault",
+        "programmingLanguage": "Dart",
+        "runtimePlatform": "Flutter",
+        "description": "Hardware-backed key-value vault gated behind biometric prompts with sealed Result types and zero plaintext memory caching.",
+        "url": "https://pub.dev/packages/biometric_secure_vault",
+        "codeRepository": "https://github.com/landxcape/biometric_secure_vault",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/biometric_secure_vault"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#package-ffr_crypto",
+        "name": "ffr_crypto",
+        "programmingLanguage": "Dart / Rust",
+        "runtimePlatform": "Dart FFI",
+        "description": "Rust-backed cryptographic engine providing high-speed RSA signature verification, AEAD encryption, and SHA hashing via dart:ffi.",
+        "url": "https://pub.dev/packages/ffr_crypto",
+        "codeRepository": "https://github.com/landxcape/ffr_crypto",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/ffr_crypto"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#tool-mso",
+        "name": "mac-sym-offload",
+        "alternateName": "mso",
+        "programmingLanguage": "Bash",
+        "runtimePlatform": "macOS",
+        "description": "macOS developer SSD cache offloader and atomic symlink manager for Gradle, Android SDK, and Xcode build artifacts with APFS volume cloning and rollback safety.",
+        "url": "https://github.com/landxcape/mac-sym-offload",
+        "codeRepository": "https://github.com/landxcape/mac-sym-offload",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/mso"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#tool-camgylph",
+        "name": "camgylph",
+        "programmingLanguage": "C",
+        "runtimePlatform": "macOS / POSIX",
+        "description": "Real-time CLI camera capture utility converting live webcam video streams into colored ANSI terminal glyphs using SIMD color mapping and hardware video decoders.",
+        "url": "https://github.com/landxcape/camgylph",
+        "codeRepository": "https://github.com/landxcape/camgylph",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/camgylph"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#tool-rscan",
+        "name": "rscan",
+        "programmingLanguage": "Rust",
+        "runtimePlatform": "macOS / Linux",
+        "description": "High-speed Layer 2 raw Ethernet ARP subnet discovery and multithreaded non-blocking TCP port scanner written in Rust.",
+        "url": "https://github.com/landxcape/rscan",
+        "codeRepository": "https://github.com/landxcape/rscan",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/rscan"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://shakyapurna.com.np/#tool-synkrophase",
+        "name": "synkrophase",
+        "programmingLanguage": "C++",
+        "runtimePlatform": "POSIX / Local Network",
+        "description": "Zero-latency local network audio and media playback protocol synchronizer with precision monotonic clock drift compensation and UDP multicast beacons.",
+        "url": "https://github.com/landxcape/synkrophase",
+        "codeRepository": "https://github.com/landxcape/synkrophase",
+        "potentialAction": {
+          "@type": "ViewAction",
+          "name": "Launch Interactive Lab",
+          "target": "https://shakyapurna.com.np/lab/synkrophase"
+        },
+        "author": { "@id": "https://shakyapurna.com.np/#person" }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0B0D0E;
+      overflow: hidden;
+    }
+
+    #semantic-fallback {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+      padding: 48px 24px 96px;
+      max-width: 980px;
+      margin: 0 auto;
+      color: #CBD5E1;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.65;
+      z-index: 1;
+    }
+
+    #semantic-fallback h1,
+    #semantic-fallback h2,
+    #semantic-fallback h3,
+    #semantic-fallback h4 {
+      color: #F8FAFC;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    #semantic-fallback h1 {
+      font-size: 2.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    #semantic-fallback h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    #semantic-fallback h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      color: #38BDF8;
+    }
+
+    #semantic-fallback code,
+    #semantic-fallback pre {
+      font-family: 'Cascadia Code', 'Fira Code', monospace;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    #semantic-fallback a {
+      color: #38BDF8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    #semantic-fallback .kicker {
+      font-family: 'Cascadia Code', monospace;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #38BDF8;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    #semantic-fallback .metric-pill {
+      display: inline-block;
+      font-family: 'Cascadia Code', monospace;
+      font-size: 0.78rem;
+      background: rgba(56, 189, 248, 0.1);
+      color: #38BDF8;
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+    }
+
+    #semantic-fallback .notice-box {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 8px;
+      padding: 20px;
+      margin: 28px 0;
+    }
+
+    #app-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100dvh;
+      background-color: #0B0D0E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.28s;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    #app-loader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    #loader-grid-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    #loader-noise-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.045;
+      mix-blend-mode: overlay;
+    }
+
+    .loader-card {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(12px, 2.5vh, 18px);
+      padding: clamp(16px, 3vw, 24px);
+    }
+
+    .loader-icon {
+      width: clamp(32px, 4.5vw, 40px);
+      height: clamp(32px, 4.5vw, 40px);
+      image-rendering: -webkit-optimize-contrast;
+      opacity: 0.95;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+    }
+
+    .loader-status {
+      font-family: "Cascadia Code", Menlo, Monaco, Consolas, monospace;
+      font-size: clamp(9.5px, 1.2vw, 11px);
+      letter-spacing: 0.16em;
+      color: #94A3B8;
+      text-transform: uppercase;
+      text-align: center;
+      user-select: none;
+    }
+
+    .loader-bar {
+      width: clamp(120px, 22vw, 160px);
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 1px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .loader-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 45%;
+      background: linear-gradient(90deg, transparent, #38BDF8, transparent);
+      animation: shimmer 1.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(300%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Generative Architectural Grid Shimmer Loader -->
+  <div id="app-loader">
+    <canvas id="loader-grid-canvas"></canvas>
+    <div id="loader-noise-overlay"></div>
+    <div class="loader-card">
+      <img src="favicon.png" width="36" height="36" alt="Brand Mark" class="loader-icon" />
+      <div class="loader-status">INITIALIZING WASM RUNTIME</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var canvas = document.getElementById('loader-grid-canvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+      var animId = null;
+      var startTime = null;
+      var step = 48;
+      var width = 0, height = 0, dpr = 1;
+
+      // Zero-latency procedural tactile grain overlay matching home page
+      var noiseOverlay = document.getElementById('loader-noise-overlay');
+      if (noiseOverlay) {
+        var nCanvas = document.createElement('canvas');
+        nCanvas.width = 128;
+        nCanvas.height = 128;
+        var nCtx = nCanvas.getContext('2d');
+        var imgData = nCtx.createImageData(128, 128);
+        var d = imgData.data;
+        for (var n = 0; n < d.length; n += 4) {
+          var v = (Math.random() * 255) | 0;
+          d[n] = v;
+          d[n + 1] = v;
+          d[n + 2] = v;
+          d[n + 3] = 255;
+        }
+        nCtx.putImageData(imgData, 0, 0);
+        noiseOverlay.style.backgroundImage = 'url(' + nCanvas.toDataURL() + ')';
+        noiseOverlay.style.backgroundRepeat = 'repeat';
+      }
+
+      function resize() {
+        dpr = window.devicePixelRatio || 1;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.round(width * dpr);
+        canvas.height = Math.round(height * dpr);
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      resize();
+      window.addEventListener('resize', resize);
+
+      function draw(now) {
+        if (!startTime) startTime = now;
+        var elapsed = (now - startTime) / 1000;
+        var p = Math.min(1.0, elapsed / 1.2);
+        var ease = 1.0 - Math.pow(1.0 - p, 3);
+        var maxR = Math.hypot(width, height) * 0.7;
+        var r = maxR * ease;
+
+        ctx.clearRect(0, 0, width, height);
+
+        var cx = width / 2;
+        var cy = height / 2;
+
+        // Subtle ambient center glow
+        var glowR = Math.min(450, r * 0.95);
+        if (glowR > 0) {
+          var glow = ctx.createRadialGradient(cx, cy, 0, cx, cy, glowR);
+          glow.addColorStop(0, 'rgba(56, 189, 248, 0.05)');
+          glow.addColorStop(0.6, 'rgba(56, 189, 248, 0.01)');
+          glow.addColorStop(1, 'rgba(56, 189, 248, 0)');
+          ctx.fillStyle = glow;
+          ctx.beginPath();
+          ctx.arc(cx, cy, glowR, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        var maxCols = Math.ceil((width / 2) / step) + 1;
+        var maxRows = Math.ceil((height / 2) / step) + 1;
+
+        // 1. Minor vertical lines (48px step)
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.022)';
+        ctx.beginPath();
+        for (var i = -maxCols; i <= maxCols; i++) {
+          if (i % 4 === 0) continue;
+          var x = cx + i * step;
+          var dx = Math.abs(x - cx);
+          if (dx < r) {
+            var dy = Math.sqrt(r * r - dx * dx);
+            ctx.moveTo(x, cy - dy);
+            ctx.lineTo(x, cy + dy);
+          }
+        }
+        ctx.stroke();
+
+        // 2. Major structural vertical lines (192px / 4 cells)
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.07)';
+        ctx.beginPath();
+        for (var i = -maxCols; i <= maxCols; i++) {
+          if (i % 4 !== 0) continue;
+          var x = cx + i * step;
+          var dx = Math.abs(x - cx);
+          if (dx < r) {
+            var dy = Math.sqrt(r * r - dx * dx);
+            ctx.moveTo(x, cy - dy);
+            ctx.lineTo(x, cy + dy);
+          }
+        }
+        ctx.stroke();
+
+        // 3. Minor horizontal lines (48px step)
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.022)';
+        ctx.beginPath();
+        for (var j = -maxRows; j <= maxRows; j++) {
+          if (j % 4 === 0) continue;
+          var y = cy + j * step;
+          var dy = Math.abs(y - cy);
+          if (dy < r) {
+            var dx = Math.sqrt(r * r - dy * dy);
+            ctx.moveTo(cx - dx, y);
+            ctx.lineTo(cx + dx, y);
+          }
+        }
+        ctx.stroke();
+
+        // 4. Major structural horizontal lines (192px / 4 cells)
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.07)';
+        ctx.beginPath();
+        for (var j = -maxRows; j <= maxRows; j++) {
+          if (j % 4 !== 0) continue;
+          var y = cy + j * step;
+          var dy = Math.abs(y - cy);
+          if (dy < r) {
+            var dx = Math.sqrt(r * r - dy * dy);
+            ctx.moveTo(cx - dx, y);
+            ctx.lineTo(cx + dx, y);
+          }
+        }
+        ctx.stroke();
+
+        // 5. Major coordinate crosses (+) exclusively at 192px intersections
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.20)';
+        ctx.beginPath();
+        for (var i = -maxCols; i <= maxCols; i++) {
+          if (i % 4 !== 0) continue;
+          var x = cx + i * step;
+          var dx = x - cx;
+          for (var j = -maxRows; j <= maxRows; j++) {
+            if (j % 4 !== 0) continue;
+            var y = cy + j * step;
+            var dy = y - cy;
+            var dist = Math.hypot(dx, dy);
+            if (dist <= r) {
+              ctx.moveTo(x - 4, y);
+              ctx.lineTo(x + 4, y);
+              ctx.moveTo(x, y - 4);
+              ctx.lineTo(x, y + 4);
+            }
+          }
+        }
+        ctx.stroke();
+
+        // 6. Feathered edge fade: smoothly fades boundary into the void
+        if (r > 0) {
+          ctx.globalCompositeOperation = 'destination-in';
+          var feather = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+          feather.addColorStop(0, 'rgba(0, 0, 0, 1)');
+          feather.addColorStop(0.65, 'rgba(0, 0, 0, 0.95)');
+          feather.addColorStop(0.85, 'rgba(0, 0, 0, 0.5)');
+          feather.addColorStop(1, 'rgba(0, 0, 0, 0)');
+          ctx.fillStyle = feather;
+          ctx.fillRect(0, 0, width, height);
+          ctx.globalCompositeOperation = 'source-over';
+        }
+
+        animId = requestAnimationFrame(draw);
+      }
+
+      animId = requestAnimationFrame(draw);
+
+      window.addEventListener('flutter-first-frame', function () {
+        if (animId) cancelAnimationFrame(animId);
+        window.removeEventListener('resize', resize);
+      });
+    })();
+  </script>
+
+  <!-- Semantic Prerendered DOM & Autonomous Agent Specification -->
+  <div id="semantic-fallback">
+    <header>
+      <div class="kicker">• KATHMANDU, NEPAL // FLUTTER &amp; SYSTEMS</div>
+      <h1>Purna Kalyan Shakya</h1>
+      <p><strong>Senior Flutter Engineer</strong></p>
+      <p>Software engineer with an electronics engineering background, working primarily in Flutter, Dart, and native systems integration. Engineering focus centers on runtime predictability, offline-first architectures, and resilient developer tooling built for adverse hardware environments, bridging into native Android platform channels, C/Rust via Dart FFI, and WebAssembly (WASM).</p>
+      <p>
+        <span class="metric-pill">4 Commercial Systems</span>
+        <span class="metric-pill">10 Open Source Packages</span>
+        <span class="metric-pill">4 Command-Line Tools</span>
+        <span class="metric-pill">5+ Years Experience</span>
+      </p>
+    </header>
+
+    <div class="notice-box">
+      <h4>Runtime Architecture &amp; Interactive Workbench Notice</h4>
+      <p>This web platform is an autonomous client-side engineering application compiled from Dart to <strong>WebAssembly (WASM)</strong> and executed directly on the client's GPU via hardware-accelerated <strong>CanvasKit / WebGL</strong>. It features procedural GLSL fragment shaders (continuous Rayleigh-scattering atmospheric sky gradients, dynamic solar celestial orbits, and real-time noise grain) alongside multithreaded Dart isolate compute engines.</p>
+      <p>While this semantic document provides the complete, authoritative catalog of systems architecture, published libraries, and engineering case studies, the interactive Package Lab (including live 60 FPS gravitational physics simulations, raycast wavefield observatories, and offline fault-injection sandboxes) runs client-side and requires a modern browser with WebAssembly and WebGL acceleration enabled.</p>
+    </div>
+
+    <main>
+      <section>
+        <h2>01 // Commercial Systems &amp; Engineering Case Studies</h2>
+
+        <article>
+          <h3>Real-Time Fleet Telemetry &amp; Map Marker Interpolator // Slash Plus</h3>
+          <p>
+            <span class="metric-pill">1,500+ Active Vehicles</span>
+            <span class="metric-pill">Sub-3s Coordinate Batching</span>
+            <span class="metric-pill">Worker Isolate Pool</span>
+            <span class="metric-pill">Ticker Bearing Interpolation</span>
+          </p>
+          <p>Live tracking engine monitoring 1,500+ commercial vehicles across nationwide transit routes in Nepal.</p>
+          <p><strong>Problem &amp; Constraints:</strong> High-frequency Socket.IO telemetry packets arrived so rapidly that deserializing JSON payloads on Flutter's main UI thread saturated the isolate event loop, triggering frame drops and halting map animations.</p>
+          <p><strong>Solution &amp; Architecture:</strong> Offloaded payload deserialization and validation to a dedicated, persistent worker isolate pool. Coordinates are batched into 3-second temporal windows and smoothly interpolated using custom ticker-driven spherical bearing and position interpolation curves.</p>
+          <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/animated_marker">animated_marker</a>, <a href="https://pub.dev/packages/isolate_runner_mixin">isolate_runner_mixin</a></p>
+        </article>
+
+        <article>
+          <h3>Offline-First Transit Media &amp; Signage Player // Slash Plus</h3>
+          <p>
+            <span class="metric-pill">100+ Transit Displays</span>
+            <span class="metric-pill">Sub-200ms Transitions</span>
+            <span class="metric-pill">SQLite Priority Queue</span>
+            <span class="metric-pill">150ms RSA Verification</span>
+          </p>
+          <p>Autonomous digital signage and infotainment systems operating on commercial passenger transit buses.</p>
+          <p><strong>Problem &amp; Constraints:</strong> Harsh onboard vehicular operating environments characterized by abrupt engine power cuts, frequent cellular dead zones along mountain highways, and severe thermal throttling on low-cost Android hardware.</p>
+          <p><strong>Solution &amp; Architecture:</strong> Implemented a resilient offline-first SQLite state machine with durable priority task queues, cryptographic lease verification, and atomic file swaps. Accelerated cryptographic RSA verification in native Rust/C via <code>dart:ffi</code>, reducing startup validation time from 15s down to 150ms (a 99% latency reduction).</p>
+          <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/resumable_downloader">resumable_downloader</a>, <a href="https://pub.dev/packages/ffr_crypto">ffr_crypto</a></p>
+        </article>
+
+        <article>
+          <h3>Handheld Android POS Fleet &amp; Direct Thermal Printer Engine // Slash Plus</h3>
+          <p>
+            <span class="metric-pill">30+ Field Devices</span>
+            <span class="metric-pill">Sub-10ms Ticket Renders</span>
+            <span class="metric-pill">Raw ESC/POS Streaming</span>
+            <span class="metric-pill">Hardware Fault Recovery</span>
+          </p>
+          <p>Fleet of handheld Android POS devices deployed for physical ticketing across transit terminals.</p>
+          <p><strong>Problem &amp; Constraints:</strong> Vendor Android printer SDKs suffered from unmanaged memory leaks, thread contention, and unpredictable printer freezes during peak ticketing rushes.</p>
+          <p><strong>Solution &amp; Architecture:</strong> Engineered a direct binary ESC/POS byte streaming pipeline over low-level Android hardware interfaces, bypassing vendor runtime layers. Rendered print layouts on an offscreen Flutter Canvas at sub-10ms latency with cryptographically signed local transaction ledgers.</p>
+        </article>
+
+        <article>
+          <h3>Real-Time Delivery Logistics &amp; Dispatch Engine // Dynamic Technosoft</h3>
+          <p>
+            <span class="metric-pill">Enterprise Scale</span>
+            <span class="metric-pill">Clean Architecture</span>
+            <span class="metric-pill">Event-Driven BLoC</span>
+            <span class="metric-pill">Live Google Maps</span>
+          </p>
+          <p>Courier tracking, dispatch coordination, and route management system built with scalable Feature-First Clean Architecture and unidirectional BLoC state streams.</p>
+          <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/clean_feature_arch">clean_feature_arch</a>, <a href="https://pub.dev/packages/repository_kit">repository_kit</a></p>
+        </article>
+      </section>
+
+      <section>
+        <h2>02 // Interactive Package Lab &amp; Execution Sandboxes</h2>
+        <p>The site houses an integrated developer workbench with executable code consoles, architectural contracts, and in-browser interactive sandboxes:</p>
+
+        <article>
+          <h3>N-Body Gravitational Physics Simulation Canvas</h3>
+          <p>A multi-body celestial simulator running in pure Dart and Flutter Canvas. Solves gravitational differential equations at 60 FPS using 4th-order Runge-Kutta (RK4), Verlet, and Euler numerical integrators with interactive pointer attractor wells and Barnes-Hut spatial quadtree approximation.</p>
+          <p><em>Available in the interactive workbench under package <code>nbody_sim_flutter</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Zen Grid Dynamic Wavefield Observatory</h3>
+          <p>A procedural generative canvas evaluating continuous trigonometric wavefields, interactive raycasting, and coordinate crosshair telemetry across customizable grid topologies.</p>
+          <p><em>Available in the interactive workbench under <a href="https://shakyapurna.com.np/lab/zen_grid_observatory">Zen Grid Observatory</a>.</em></p>
+        </article>
+
+        <article>
+          <h3>Real-Time Vector Map &amp; Marker Telemetry Sandbox</h3>
+          <p>Interactive coordinate stream simulator demonstrating smooth 60 FPS vehicle motion and spherical bearing rotation without UI stutter.</p>
+          <p><em>Available in the interactive workbench under package <code>animated_marker</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Zero-Layout-Pass Marquee Ticker Sandbox</h3>
+          <p>A high-throughput continuous text streamer that operates entirely at the RenderBox level, completely avoiding recurring Flutter layout and garbage collection passes.</p>
+          <p><em>Available in the interactive workbench under package <code>scroll_texts_widget</code>.</em></p>
+        </article>
+
+        <article>
+          <h3>Repository Kit Offline Synchronization Sandbox</h3>
+          <p>An interactive network emulator demonstrating functional <code>Result&lt;T&gt;</code> error handling, optimistic cache writes, and automatic background synchronization during simulated network dropouts.</p>
+          <p><em>Available in the interactive workbench under package <code>repository_kit</code>.</em></p>
+        </article>
+      </section>
+
+      <section>
+        <h2>03 // Open Source Packages &amp; Libraries</h2>
+        <ul>
+          <li><strong><a href="https://pub.dev/packages/animated_marker">animated_marker</a></strong> [<a href="https://pub.dev/packages/animated_marker">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/animated_marker">Interactive Lab</a> | <a href="https://github.com/landxcape/animated_marker">GitHub</a>]: Smooth 60 FPS GPS coordinate interpolation and spherical bearing rotation for vehicle tracking on Google Maps.</li>
+          <li><strong><a href="https://pub.dev/packages/scroll_texts_widget">scroll_texts_widget</a></strong> [<a href="https://pub.dev/packages/scroll_texts_widget">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/scroll_texts_widget">Interactive Lab</a> | <a href="https://github.com/landxcape/scroll_texts_widget">GitHub</a>]: High-performance continuous horizontal marquee text ticker bypassing recurring widget layout passes.</li>
+          <li><strong><a href="https://pub.dev/packages/isolate_runner_mixin">isolate_runner_mixin</a></strong> [<a href="https://pub.dev/packages/isolate_runner_mixin">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/isolate_runner_mixin">Interactive Lab</a> | <a href="https://github.com/landxcape/isolate_runner_mixin">GitHub</a>]: Persistent worker concurrency mixin with RootIsolateToken bridging and universal Web/Wasm compilation.</li>
+          <li><strong><a href="https://pub.dev/packages/resumable_downloader">resumable_downloader</a></strong> [<a href="https://pub.dev/packages/resumable_downloader">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/resumable_downloader">Interactive Lab</a> | <a href="https://github.com/landxcape/resumable_downloader">GitHub</a>]: Resilient multipart chunked downloader with SQLite task persistence and background download resumption.</li>
+          <li><strong><a href="https://pub.dev/packages/repository_kit">repository_kit</a></strong> [<a href="https://pub.dev/packages/repository_kit">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/repository_kit">Interactive Lab</a> | <a href="https://github.com/landxcape/repository_kit">GitHub</a>]: Pure Dart offline-first repository patterns with functional <code>Result&lt;T&gt;</code> types and reactive synchronization.</li>
+          <li><strong><a href="https://pub.dev/packages/clean_feature_arch">clean_feature_arch</a></strong> [<a href="https://pub.dev/packages/clean_feature_arch">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/clean_feature_arch">Interactive Lab</a> | <a href="https://github.com/landxcape/clean_feature_arch">GitHub</a>]: Feature-first Clean Architecture scaffolding toolkit with Dart 3 structural lint rules.</li>
+          <li><strong><a href="https://pub.dev/packages/nbody_sim_core">nbody_sim_core</a></strong> [<a href="https://pub.dev/packages/nbody_sim_core">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/nbody_sim_core">Interactive Lab</a> | <a href="https://github.com/landxcape/nbody_sim_core">GitHub</a>]: Engine-agnostic N-body gravitational simulation core with Runge-Kutta 4th order numerical integrators.</li>
+          <li><strong><a href="https://pub.dev/packages/nbody_sim_flutter">nbody_sim_flutter</a></strong> [<a href="https://pub.dev/packages/nbody_sim_flutter">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/nbody_sim_flutter">Interactive Lab</a> | <a href="https://github.com/landxcape/nbody_sim_flutter">GitHub</a>]: Hardware-accelerated Flutter rendering widgets and interactive viewport gestures for N-body celestial simulations.</li>
+          <li><strong><a href="https://pub.dev/packages/biometric_secure_vault">biometric_secure_vault</a></strong> [<a href="https://pub.dev/packages/biometric_secure_vault">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/biometric_secure_vault">Interactive Lab</a> | <a href="https://github.com/landxcape/biometric_secure_vault">GitHub</a>]: Hardware-backed key-value storage gated behind biometric authentication prompts.</li>
+          <li><strong><a href="https://pub.dev/packages/ffr_crypto">ffr_crypto</a></strong> [<a href="https://pub.dev/packages/ffr_crypto">pub.dev</a> | <a href="https://shakyapurna.com.np/lab/ffr_crypto">Interactive Lab</a> | <a href="https://github.com/landxcape/ffr_crypto">GitHub</a>]: High-speed native RSA signature verification, AEAD, and hashing via dart:ffi bindings.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>04 // Command-Line Systems Tools &amp; Homebrew Tap</h2>
+        <ul>
+          <li><strong><a href="https://github.com/landxcape/mac-sym-offload">mso (mac-sym-offload)</a></strong> [<a href="https://shakyapurna.com.np/lab/mso">Interactive Lab</a> | <a href="https://github.com/landxcape/mac-sym-offload">GitHub</a>]: macOS developer SSD cache offloader and atomic symlink manager for Gradle, Android SDK, and Xcode artifacts.</li>
+          <li><strong><a href="https://github.com/landxcape/camgylph">camgylph</a></strong> [<a href="https://shakyapurna.com.np/lab/camgylph">Interactive Lab</a> | <a href="https://github.com/landxcape/camgylph">GitHub</a>]: Real-time CLI camera capture utility converting live webcam video streams into colored ANSI terminal glyphs.</li>
+          <li><strong><a href="https://github.com/landxcape/rscan">rscan</a></strong> [<a href="https://shakyapurna.com.np/lab/rscan">Interactive Lab</a> | <a href="https://github.com/landxcape/rscan">GitHub</a>]: High-speed Layer 2 ARP subnet scanner and multithreaded TCP port auditor using raw Ethernet sockets.</li>
+          <li><strong><a href="https://github.com/landxcape/synkrophase">synkrophase</a></strong> [<a href="https://shakyapurna.com.np/lab/synkrophase">Interactive Lab</a> | <a href="https://github.com/landxcape/synkrophase">GitHub</a>]: Zero-latency local network audio and media playback protocol synchronizer.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Contact &amp; Developer Links</h2>
+      <p>
+        <strong>Email:</strong> <a href="mailto:shakyakpurna@gmail.com">shakyakpurna@gmail.com</a> |
+        <strong>AI Specification:</strong> <a href="llms.txt">llms.txt</a>
+      </p>
+      <p>
+        <a href="https://github.com/landxcape">GitHub // landxcape</a> |
+        <a href="https://linkedin.com/in/purnashakya">LinkedIn // purnashakya</a> |
+        <a href="https://pub.dev/publishers/shakyapurna.com.np/packages">pub.dev Publisher</a> |
+        <a href="https://shakyapurna.com.np/resume.pdf">Resume PDF</a>
+      </p>
+      <p>© 2026 Purna Kalyan Shakya. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var loader = document.getElementById('app-loader');
+      if (loader) {
+        loader.classList.add('fade-out');
+        setTimeout(function () {
+          loader.remove();
+        }, 300);
+      }
+      var fallback = document.getElementById('semantic-fallback');
+      if (fallback) fallback.remove();
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+  <noscript>
+    <style>
+      #app-loader { display: none !important; }
+      html, body { overflow: auto !important; height: auto !important; }
+    </style>
+  </noscript>
+</body>
+</html>

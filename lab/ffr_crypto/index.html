@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -19,7 +19,7 @@
   <script>
     (function () {
       var hash = window.location.hash;
-      if (hash && hash.startsWith('#/')) {
+      if (hash && hash.startsWith('#/') && !hash.startsWith('#//')) {
         var targetPath = hash.substring(1);
         var search = window.location.search;
         if (targetPath.indexOf('?') !== -1 && search) {
@@ -39,7 +39,7 @@
   <meta name="theme-color" content="#ECE7DF" media="(prefers-color-scheme: light)">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://shakyapurna.com.np/">
+  <link rel="canonical" href="https://shakyapurna.com.np/lab/ffr_crypto">
 
   <!-- Standardized LLM Context Discovery -->
   <link rel="alternate" type="text/plain" href="https://shakyapurna.com.np/llms.txt" title="LLM Context">
@@ -55,7 +55,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal">
   <meta property="og:description" content="Senior Flutter Engineer based in Kathmandu, Nepal. Developing primarily in Flutter and Dart across offline-first architectures, mobile systems, and open-source packages.">
-  <meta property="og:url" content="https://shakyapurna.com.np/">
+  <meta property="og:url" content="https://shakyapurna.com.np/lab/ffr_crypto">
   <meta property="og:site_name" content="Purna Kalyan Shakya Engineering Portfolio">
   <meta property="og:image" content="https://shakyapurna.com.np/icons/Icon-512.png">
   <meta property="og:image:width" content="512">
@@ -70,6 +70,7 @@
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Purna Shakya">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
@@ -525,14 +526,6 @@
       margin: 28px 0;
     }
 
-    noscript #app-loader {
-      display: none !important;
-    }
-
-    noscript html, noscript body {
-      overflow: auto !important;
-    }
-
     #app-loader {
       position: fixed;
       top: 0;
@@ -883,7 +876,7 @@
           </p>
           <p>Autonomous digital signage and infotainment systems operating on commercial passenger transit buses.</p>
           <p><strong>Problem &amp; Constraints:</strong> Harsh onboard vehicular operating environments characterized by abrupt engine power cuts, frequent cellular dead zones along mountain highways, and severe thermal throttling on low-cost Android hardware.</p>
-          <p><strong>Solution &amp; Architecture:</strong> Implemented a resilient offline-first SQLite state machine with durable priority task queues, cryptographic lease verification, and atomic file swaps. Rewrote cryptographic RSA verification in Kotlin via Android platform channels, reducing startup validation time from 15s down to 150ms (a 99% latency reduction).</p>
+          <p><strong>Solution &amp; Architecture:</strong> Implemented a resilient offline-first SQLite state machine with durable priority task queues, cryptographic lease verification, and atomic file swaps. Accelerated cryptographic RSA verification in native Rust/C via <code>dart:ffi</code>, reducing startup validation time from 15s down to 150ms (a 99% latency reduction).</p>
           <p><em>Extracted Open Source Packages:</em> <a href="https://pub.dev/packages/resumable_downloader">resumable_downloader</a>, <a href="https://pub.dev/packages/ffr_crypto">ffr_crypto</a></p>
         </article>
 
@@ -926,7 +919,7 @@
         <article>
           <h3>Zen Grid Dynamic Wavefield Observatory</h3>
           <p>A procedural generative canvas evaluating continuous trigonometric wavefields, interactive raycasting, and coordinate crosshair telemetry across customizable grid topologies.</p>
-          <p><em>Available in the interactive workbench under experiment <code>Zen Grid Observatory</code>.</em></p>
+          <p><em>Available in the interactive workbench under <a href="https://shakyapurna.com.np/lab/zen_grid_observatory">Zen Grid Observatory</a>.</em></p>
         </article>
 
         <article>
@@ -1005,5 +998,11 @@
     });
   </script>
   <script src="flutter_bootstrap.js" async></script>
+  <noscript>
+    <style>
+      #app-loader { display: none !important; }
+      html, body { overflow: auto !important; height: auto !important; }
+    </style>
+  </noscript>
 </body>
 </html>

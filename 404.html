@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -19,7 +19,7 @@
   <script>
     (function () {
       var hash = window.location.hash;
-      if (hash && hash.startsWith('#/')) {
+      if (hash && hash.startsWith('#/') && !hash.startsWith('#//')) {
         var targetPath = hash.substring(1);
         var search = window.location.search;
         if (targetPath.indexOf('?') !== -1 && search) {
@@ -70,6 +70,7 @@
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Purna Shakya">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">

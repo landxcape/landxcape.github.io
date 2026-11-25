@@ -1,12 +1,11 @@
 {
     "name": "Purna Kalyan Shakya // Senior Flutter Engineer • Kathmandu, Nepal",
     "short_name": "Purna Shakya",
-    "start_url": ".",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#0B0D0E",
     "theme_color": "#0B0D0E",
     "description": "Personal portfolio, open-source package workbench, and developer tools by Purna Kalyan Shakya.",
-    "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
